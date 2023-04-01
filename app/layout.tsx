@@ -2,6 +2,7 @@
 import './globals.css'
 import Header from './header'
 import Navigation from './parts/Navigations'
+import Footer from './parts/Footer'
 
 export const metadata = {
   title: 'Chemcider Inc',
@@ -17,8 +18,14 @@ export default function RootLayout({
     <html lang="en">
       <body>
           {/* <Header /> */}
-          <Navigation />
+          {/* <Navigation /> */}
           {children}
+
+          <section className=' py-10 bg-slate-900  '>
+          <div className=' mx-auto md:w-full lg:w-[1400px] '>
+            <Footer  />
+          </div>
+        </section> 
       </body>
     </html>
   )

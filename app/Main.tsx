@@ -194,17 +194,7 @@ function Home(): JSX.Element {
             <Partners />
           </div>
         </section>
-
-        {/* END OF PARTNERS */}
-
-        <section className=' py-10 bg-slate-900  '>
-          <div className=' mx-auto md:w-full lg:w-[1400px] '>
-            <Footer openModal={openModal} />
-          </div>
-        </section> 
   </div>
-
-  
  </div>
     </main>
   )
