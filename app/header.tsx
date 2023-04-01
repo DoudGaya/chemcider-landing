@@ -34,14 +34,11 @@ const Header = () => {
                         <p>Products</p>
                     </Link>
                 </li>
-
                 <li>
                     <Link href="/profiles" className=" h-[70px] flex items-center dark:hover:bg-gray-800/90 hover:bg-blue-100/40 px-4 border-b-4 border-transparent hover:border-blue-300  ">
                         <p>Profiles</p>
                     </Link>
                 </li>
-
-                
             </ul>
         </div>
 
