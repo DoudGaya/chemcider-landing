@@ -106,7 +106,7 @@ function Home(): JSX.Element {
           </div>
 
           <div className="h-[300px] rounded-lg overflow-hidden">
-            <Image src={homeBannerIMG} alt="" width={100} height={100} className='object-cover w-full h-full ' />
+            <Image src={homeBannerIMG} alt=""  className='object-cover w-full h-full ' />
           </div>
       <div className="dark:text-slate-100">
         <h2 className=' text-2xl text-start font-semibold '>Your Ultimate Destination for Scientific and Engineering Solutions</h2>
