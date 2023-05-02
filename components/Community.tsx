@@ -7,16 +7,16 @@ const Community = ( { openModal }: any) => {
         <>
         <section className=" flex flex-col px-6 md:px-0 mb-10 ">
             <div className="grid grid-cols-1  md:grid-cols-2 gap-6">
-                <div className=" md:my-10 py-10  space-y-8 flex flex-col justify-center ">
-                    <h2 className='text-2xl font-semibold self-center md:self-start flex'>Join our community for free</h2>
-                    <p className=' text-lg px-2'>
+                <div className=" px-4 md:my-10 py-10 space-y-6 lg:space-y-8 flex flex-col justify-center ">
+                    <h2 className='xl:text-2xl text-lg font-semibold xl:self-center md:self-start flex'>Join our community for free</h2>
+                    <p className=''>
                         Unleash the power of collaboration with our App designed specifically for engineers and scientists. 
                         Connect with like-minded professionals, share ideas, and work together on innovative projects. 
                         Experience seamless communication, streamlined project management, and an intuitive interface, 
                         all in one place. Join the community of experts today and turn your ideas into reality."
                     </p>
 
-                    <div className=" grid grid-cols-1 gap-y-4 px-2 md:gap-0 sm:gap-x-4 sm:grid-cols-2 md:gap-x-6 ">
+                    <div className=" grid grid-cols-1 gap-y-4 md:gap-0 sm:gap-x-4 sm:grid-cols-2 md:gap-x-6 ">
                         <button onClick={openModal} className=' py-4 px-6 bg-[rgb(34,176,196)] dark:hover:bg-[rgb(34,176,196)] text-white font-semibold dark:bg-purple-50/30 rounded-md: flex space-x-3 items-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
@@ -34,7 +34,7 @@ const Community = ( { openModal }: any) => {
 
                 </div>
 
-                <div className=" items-center justify-center overflow-hidden flex md:py-10 md:px-10">
+                <div className=" items-center justify-center overflow-hidden flex  md:py-10 md:px-10">
                     <Image src={comIMG} className=" object-contain block dark:hidden " alt="chemcider community" />
                     <Image src={comIMGDark} className=" object-contain hidden dark:block " alt="chemcider community" />
                 </div>

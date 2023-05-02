@@ -11,15 +11,15 @@ const Store = ({ openModal }: any) => {
            <div className=" flex w-full items-center justify-center">
            {/* <h2 className='text-2xl font-semibold mb-6'>Our Resource Store for Scientist, Engineers and Manufacturers </h2> */}
            </div>
-            <div className=" grid grid-cols-1 md:grid-cols-2 md:gap-x-10 gap-y-6 px-6 ">
+            <div className=" grid grid-cols-1 md:grid-cols-2 md:gap-x-10 gap-y-4 px-6 ">
                 <div className="h-[400px] items-center justify-center dark:brightness-[90%]">
-                    <h2 className=" text-2xl md:hidden font-semibold flex text-center ">Discover, Reasearch and Technical products in our Store</h2>
+                    <h2 className=" text-lg md:hidden font-semibold flex text-center ">Discover, Reasearch and Technical products in our Store</h2>
                     <Image src={products} alt="" className=' object-contain object-center w-full h-full ' />
                 </div>
                 <div className=" md:px-6 flex flex-col justify-center">
                     {/* <h2 className=" text-2xl mb-6 font-semibold">Discover the Best in Scientific, Medical, and Industrial Resources at Our Ecommerce Store</h2> */}
                     <h2 className=" text-xl mb-6 hidden md:block font-semibold ">Discover, Reasearch and Technical products in our Store</h2>
-                    <p className=''>
+                    <p className=' text-sm lg:text-base'>
                         Our ecommerce store is the perfect destination for anyone in need of high-quality scientific, 
                         medical, and industrial resources. With a vast selection of products and unbeatable prices, 
                         we are committed to delivering exceptional value to our customers. Our user-friendly website 
