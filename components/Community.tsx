@@ -6,9 +6,9 @@ const Community = ( { openModal }: any) => {
     return (
         <>
         <section className=" flex flex-col px-6 md:px-0 mb-10 ">
-            <div className="grid grid-cols-1  md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className=" px-4 md:my-10 py-10 space-y-6 lg:space-y-8 flex flex-col justify-center ">
-                    <h2 className='xl:text-2xl text-lg font-semibold xl:self-center md:self-start flex'>Join our community for free</h2>
+                    <h2 className='xl:text-2xl text-lg font-semibold  md:self-start flex'>Join our community for free</h2>
                     <p className=''>
                         Unleash the power of collaboration with our App designed specifically for engineers and scientists. 
                         Connect with like-minded professionals, share ideas, and work together on innovative projects. 
