@@ -104,7 +104,7 @@ function Main(): JSX.Element {
             <p className=' dark:text-slate-100 tracking-wide text-md'>Science Technology and Engineering</p>
           </div>
 
-          <div className="lg:h-[300px] h-[400px]  rounded-lg ">
+          <div className="h-[300px]  rounded-lg ">
             <Image src={homeBannerIMG} alt=""  className='object-cover w-full h-full ' />
           </div>
       <div className="dark:text-slate-100">
