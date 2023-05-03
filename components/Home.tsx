@@ -92,11 +92,11 @@ function Main(): JSX.Element {
 
 
   <div className="flex flex-col dark:bg-[#000A16] text-slate-900 dark:text-slate-100 w-full">
-  <div className=" grid md:grid-cols-2  grid-cols-1 md:gap-x-6 md:gap-y-0  mx-auto">
+  <div className=" grid md:grid-cols-2 grid-cols-1 md:gap-x-6 md:gap-y-0  mx-auto">
       {/* THE HOME PAGE HERE... */}
       <div className=" dark:bg-[#000A16] text-slate-900 dark:text-slate-100 ">
         <div className="w-full h-full">
-          <div className="h-screen flex pt-[50px] px-10 md:px-[60px]">
+          <div className="flex flex-row pt-[50px] px-10 md:px-[60px]">
           <div className= "flex w-full space-y-6 flex-col">
           <div className=" w-full mt-10 xl:mt-0">
             <small className='text-gray-400'>Welcome</small>
@@ -104,7 +104,7 @@ function Main(): JSX.Element {
             <p className=' dark:text-slate-100 tracking-wide text-md'>Science Technology and Engineering</p>
           </div>
 
-          <div className="lg:h-[300px] h-[800px]  rounded-lg ">
+          <div className="lg:h-[300px] h-[400px]  rounded-lg ">
             <Image src={homeBannerIMG} alt=""  className='object-cover w-full h-full ' />
           </div>
       <div className="dark:text-slate-100">
