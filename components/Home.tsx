@@ -91,10 +91,10 @@ function Main(): JSX.Element {
   : '' }
 
 
-  <div className="flex flex-col dark:bg-[#000A16] text-slate-900 dark:text-slate-100 w-full">
+  <div className="flex  flex-col dark:bg-[#000A16] text-slate-900 dark:text-slate-100 w-full">
   <div className=" grid md:grid-cols-2 grid-cols-1 md:gap-x-6 md:gap-y-0  mx-auto">
       {/* THE HOME PAGE HERE... */}
-      <div className=" dark:bg-[#000A16] text-slate-900 dark:text-slate-100 ">
+      <div className=" dark:bg-[#000A16] xl:h-screen text-slate-900 dark:text-slate-100 ">
         <div className="w-full h-full">
           <div className="flex flex-row pt-[50px] px-10 md:px-[60px]">
           <div className= "flex w-full space-y-6 flex-col">
@@ -104,7 +104,7 @@ function Main(): JSX.Element {
             <p className=' dark:text-slate-100 tracking-wide text-md'>Science Technology and Engineering</p>
           </div>
 
-          <div className="h-[300px]  rounded-lg ">
+          <div className="h-[300px] rounded-lg ">
             <Image src={homeBannerIMG} alt=""  className='object-cover w-full h-full ' />
           </div>
       <div className="dark:text-slate-100">
@@ -124,13 +124,13 @@ function Main(): JSX.Element {
       {/* THE HomeS SECTION */}
       <div className=" md:pt-[60px] xl:items-center my-6 xl:my-0 px-4 md:px-0 md:items-start lg:w-[700px] flex flex-col space-y-4">
        <div className=" flex flex-col border-b border-1 pb-10 space-y-6 ">
-       <h1 className='text-lg text-center  xl:text-2xl'>Available Solutions</h1>
+       <h1 className='text-lg text-center lg:text-left  xl:text-2xl'>Available Solutions</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-4 md:gap-4 px-6 md:px-0">
             <a href='' className="dark:bg-slate-900 dark:hover:bg-black bg-slate-200 hover:bg-white py-5 md:py-4 px-6 rounded-lg flex space-x-3">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="lg:w-7 w-5 flex-none h-5 lg:h-7">
               <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
             </svg>
-            <span className=' text-lg text-sm'>Join Our Community </span>
+            <span className=' text-lg '>Join Our Community </span>
             </a>
             <a href='' className=" dark:bg-slate-900 dark:hover:bg-black bg-slate-200 hover:bg-white py-5 md:py-4 px-6 rounded-lg flex space-x-3">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="lg:w-7 w-5 flex-none h-5 lg:h-7 ">

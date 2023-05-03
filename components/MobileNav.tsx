@@ -16,8 +16,6 @@ const toggleModal = () => {
 
    return setModal(prev => !prev)
 }
-
-
     return (
     <>
     <div className="fixed flex flex-col space-y-6 md:hidden z-50 px-6 border-b shadow-lg  py-1 bg-white dark:bg-black top-0 w-full ">
