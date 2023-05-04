@@ -1,10 +1,8 @@
 import React from 'react'
+import { MainJobs } from '@/components/Jobs/Main'
 
 const jobs = () => {
-  console.log('logging...')
-  return (
-    <div className=' bg-red-400 '>jobs</div>
-  )
+  return <MainJobs />
 }
 
 
