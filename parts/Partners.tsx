@@ -1,7 +1,7 @@
-import vwr from '/public/partners/vwr.jpg'
+import vwr from '/public/partners/vwr.png'
 import agilent from '/public/partners/agilent.png'
 import biobase from '/public/partners/biobase.png'
-import bruker from '/public/partners/bruker.jpg'
+import bruker from '/public/partners/bruker.png'
 import Image, { StaticImageData } from 'next/image'
 
 
@@ -48,7 +48,7 @@ const partners: PartnerData[] = [
 const Partner = ( {partners}: any ) => {
     return (
         <>
-         <a href={partners.url} target="_blank" className="h-[120px] flex dark:brightness-[90%]  items-center rounded-2xl hover:scale-105 transition-all ease-in-out justify-center bg-white overflow-hidden p-4  ">
+         <a href={partners.url} target="_blank" className="h-[120px] flex dark:brightness-[90%] bg-white dark:bg-slate-800   items-center rounded-2xl hover:scale-105 transition-all ease-in-out justify-center overflow-hidden p-4  ">
             <Image src={partners.img} alt={partners.altText} className=" object-contain object-center" />
         </a>
         </>

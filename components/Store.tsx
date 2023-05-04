@@ -1,5 +1,26 @@
 import products from '../public/products.svg'
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
+import product1 from '../public/products/product1.png'
+import product2 from '../public/products/product2.png'
+import product3 from '../public/products/product3.png'
+import product4 from '../public/products/product4.png'
+import product5 from '../public/products/product5.png'
+import product6 from '../public/products/product6.png'
+
+
+const productImages: StaticImageData [] = [
+    product1,
+    product2,
+    product3,
+    product4,
+    product5,
+    product6,
+]
+
+
+const image = productImages.map( item => {
+    return <Image src={item} className=' xl:snap-center ' alt='Chemcider Product' />
+})
 
 
 const Store = ({ openModal }: any) => {
@@ -10,14 +31,18 @@ const Store = ({ openModal }: any) => {
            {/* <h2 className='text-2xl font-semibold mb-6'>Our Resource Store for Scientist, Engineers and Manufacturers </h2> */}
            </div>
             <div className=" grid grid-cols-1 md:grid-cols-2 md:gap-x-10 gap-y-4 px-6 ">
-                <div className="h-[400px] items-center justify-center dark:brightness-[90%]">
+                <div className="h-[400px] flex flex-col items-center justify-center dark:brightness-[90%]">
                     <h2 className=" text-lg md:hidden font-semibold flex text-center ">Resource Store - For Scientists and Engineers </h2>
-                    <Image src={products} alt="" className=' object-contain object-center w-full h-full ' />
+                    {/* <Image src={products} alt="" className=' object-contain object-center w-full h-full ' /> */}
+   
+                       <div className="flex snap-x xl:snap-x-none overflow-x-scroll xl:overflow-x-hidden space-x-3 xl:space-x-6 h-[250px] border-r-2 py-6 border-gray-500 rounded-r-lg overflow-hidden ">
+                            {image}
+                       </div>
                 </div>
                 <div className=" md:px-6 flex flex-col justify-center">
                     {/* <h2 className=" text-2xl mb-6 font-semibold">Discover the Best in Scientific, Medical, and Industrial Resources at Our Ecommerce Store</h2> */}
                     <h2 className=" text-xl mb-6 hidden md:block font-semibold ">Resource Store - For Scientists and Engineers</h2>
-                    <p className=' text-sm lg:text-base text-justify'>
+                    <p className=' lg:text-base text-justify'>
                       With a vast selection of products and unbeatable prices, we are committed to delivering exceptional value to our customers. Our user-friendly website 
                         makes shopping a breeze, and our knowledgeable team is always available to assist you. Plus, 
                         we offer fast shipping and secure payment options to ensure a hassle-free shopping experience. 

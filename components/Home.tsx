@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import homeBannerIMG from '../public/dark.jpg'
+import world from '../public/chemcider-world.png'
+import engineering from '../public/chemcider-eng.png'
 import Community from './Community'
 import Footer from '../parts/Footer'
 import GenAI from '../parts/GenerativeAI'
@@ -91,7 +93,7 @@ function Main(): JSX.Element {
   : '' }
 
 
-  <div className="flex  flex-col dark:bg-[#000A16] text-slate-900 dark:text-slate-100 w-full">
+  <div className="flex  flex-col dark:bg-[#000A16] bg-slate-100 text-slate-900 dark:text-slate-100 w-full">
   <div className=" grid md:grid-cols-2 grid-cols-1 md:gap-x-6 md:gap-y-0  mx-auto">
       {/* THE HOME PAGE HERE... */}
       <div className=" dark:bg-[#000A16] xl:h-screen text-slate-900 dark:text-slate-100 ">
@@ -105,10 +107,10 @@ function Main(): JSX.Element {
           </div>
 
           <div className="h-[300px] rounded-lg ">
-            <Image src={homeBannerIMG} alt=""  className='object-cover w-full h-full ' />
+            <Image src={engineering} alt=""  className='object-cover w-full h-full ' />
           </div>
       <div className="dark:text-slate-100">
-        <h2 className=' text-md lg:text-lg text-start '>Your Ultimate Destination for Scientific and Engineering Solutions</h2>
+        <h2 className=' text-md lg:text-lg text-start font-semibold text-md font-logo '>Your Ultimate Destination for Scientific and Engineering Solutions</h2>
         <p className=' my-6 text-sm xl:text-lg'>
             Our mission is to provide scientists and engineers with access to quality products and connections that will help 
             them advance their research and projects. 
@@ -124,7 +126,7 @@ function Main(): JSX.Element {
       {/* THE HomeS SECTION */}
       <div className=" md:pt-[60px] xl:items-center my-6 xl:my-0 px-4 md:px-0 md:items-start lg:w-[700px] flex flex-col space-y-4">
        <div className=" flex flex-col border-b border-1 pb-10 space-y-6 ">
-       <h1 className='text-lg text-center lg:text-left  xl:text-2xl'>Available Solutions</h1>
+       <h1 className='text-md px-6 font-semibold font-logo lg:text-left  xl:text-2xl'>Available Solutions</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-4 md:gap-4 px-6 md:px-0">
             <a href='' className="dark:bg-slate-900 dark:hover:bg-black bg-slate-200 hover:bg-white py-5 md:py-4 px-6 rounded-lg flex space-x-3">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="lg:w-7 w-5 flex-none h-5 lg:h-7">
@@ -154,7 +156,7 @@ function Main(): JSX.Element {
   </div>
     <Navigation />
     {/* the community */}
-      <section className=' bg-slate-200 dark:bg-black'>
+      <section className=' bg-white dark:bg-black'>
         <div className=" md:w-full lg:w-[1200px] mx-auto">
             <Community openModal={openModal} />
           </div>
@@ -162,7 +164,7 @@ function Main(): JSX.Element {
     {/* end of community */}
 
      {/* PARTNERS */}
-     <section className=' bg-slate-900'>
+     <section className=' bg-slate-200 dark:bg-black'>
           <div className=' md:w-full lg:w-[1200px] mx-auto'>
            <Jobs />
           </div>
