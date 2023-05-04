@@ -1,8 +1,6 @@
 
 
 import { useState } from 'react'
-import homeBannerIMG from '../public/dark.jpg'
-import world from '../public/chemcider-world.png'
 import engineering from '../public/chemcider-eng.png'
 import Community from './Community'
 import Footer from '../parts/Footer'
@@ -15,6 +13,7 @@ import Modal from '../parts/Modal'
 import MobileNav from './MobileNav'
 import Image from 'next/image'
 import HomeDetails from './HomeDetails'
+import { Suspense } from 'react'
 
 
 // INTERFACES
