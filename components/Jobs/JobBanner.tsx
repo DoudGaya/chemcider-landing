@@ -8,14 +8,14 @@ export const JobBanner = () => {
     return (
         <>
             <div className=" w-full bg-slate-50 border-b border-slate-300 dark:border-slate-700 dark:bg-slate-950  flex-col flex items-center ">
-                <div className=" bg-white shadow-md border-b w-full flex py-4 px-[100px]">
+                <div className=" bg-white dark:bg-black dark:text-white dark:border-slate-700 shadow-md border-b w-full flex py-4 px-[100px]">
                    <Link href={'/'}>
                       <p className=" text-lg"> Chemcider Inc</p>
                    </Link>
                 </div>
-                <div className=" w-full justify-between flex py-10 px-[100px] h-[200px] ">
+                <div className=" w-full justify-between flex py-10 px-[100px] h-[100px] ">
                     <div className=" grid gap-3  grid-cols-3">
-                        <div className=" w-[60px] flex items-center  justify-center from-white dark:from-black dark:border-slate-700 dark:to-slate-800 dark:shadow-slate-500 cursor-pointer via-slate-50 to-slate-100 drop-shadow-lg border border-slate-200 bg-gradient-to-br  h-[60px]">
+                        <div className=" w-[60px] flex items-center   justify-center from-white dark:from-black dark:border-slate-700 dark:to-slate-800 dark:shadow-slate-500 cursor-pointer via-slate-50 to-slate-100 drop-shadow-lg border border-slate-200 bg-gradient-to-br  h-[60px]">
                        
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
@@ -38,10 +38,10 @@ export const JobBanner = () => {
                         </div>
                     </div>
                     <div className="">
-                         <button className=" py-3 px-6 bg-gradient-to-r from-slate-800 to-slate-950 border-y-2 text-white  font-logo">Post a job for free</button>
+                         <button className=" py-3 px-6 bg-gradient-to-r from-slate-800 to-slate-950 border border-slate-700 text-white  font-logo">Post a job for free</button>
                     </div>
                 </div>
-             <div className=" w-full flex items-center flex-col justify-center space-x-6  border-gray-200 px-10 rounded-full py-6">
+             <div className=" w-full py-10 flex items-center flex-col justify-center space-x-6  border-gray-200 px-10 rounded-full py-6">
                 <div className=" text-5xl dark:from-white dark:via-slate-100 dark:to-slate-300 font-logo font-bold bg-gradient-to-r text-transparent bg-clip-text from-slate-700 via-slate-900 to-slate-950 ">The Job Portal</div>
                <div className=" py-10 w-1/2 mx-auto ">
                     <SearchJobs />
