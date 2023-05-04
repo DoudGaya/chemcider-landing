@@ -15,7 +15,6 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
         </Script>
         <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-73SHRQY3GQ"></Script>
-  
       <Component {...pageProps} />
     </>
     
