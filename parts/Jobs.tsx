@@ -65,7 +65,7 @@ const Jobs = () => {
         <div className=" grid xl:grid-cols-2 py-[90px] xl:py-[150px] space-y-6">
            <div className=" flex w-full space-y-4 flex-col px-10">
             <h3 className=" xl:text-2xl font-logo font-bold dark:text-white ">Connecting Professionals with Quality Jobs</h3>
-                <p className=" dark:text-white xl:px-8 md:px-0 text-justify ">
+                <p className=" dark:text-white  md:px-0 text-justify ">
                     {/* We provide global partnership with some of the world most trusted  */}
                     With our user-friendly interface and powerful search tools, you can easily browse and apply for 
                     job opportunities that match your skills and experience. 

@@ -6,24 +6,10 @@ import ai1 from '../public/ai1.jpg'
 import ai2 from '../public/ai2.jpg'
 import ai3 from '../public/ai3.jpg'
 
-// const aitexts = [
-//     {
-//         id: 1,
-//         title: 'Get AI support with our AI model ',
-//         description: 'We offers engineers and scientists a powerful tool for getting instant solutions to technical problems using ChatGPT, an intelligent language model trained by OpenAI. The platform is designed to provide accurate responses to technical questions and is accessible from anywhere. We are committed to providing reliable and trustworthy information, and our language model is constantly updated with the latest data. With ChatGPT, you can get the answers you need quickly and efficiently.'
-//     },
 
-//     {
-//         id: 2,
-//         title: 'Generate visual results with DALL-E',
-//         description: 'We offers engineers and scientists the ability to generate visually stunning images using DALL-E, a powerful image generation model developed by OpenAI. Our platform provides an easy-to-use and efficient interface for generating unique and complex images that can enhance technical work. DALL-E is trained on a vast dataset and constantly improving to meet the needs of the scientific community. With just a few clicks, users can customize their images to match their needs, making DALL-E an essential tool for enhancing visual communication in engineering and science.'
-//     }
-// ]
 
 
 const GenAI = ({ openModal }: any) => {
-    
-    // const aicontents = aitexts.map((items) => <AIS key={items.id} openModal={openModal} items={items} />)
     return (
         <>
            <div className=" grid grid-cols-1 xl:grid-cols-3">
@@ -40,7 +26,7 @@ const GenAI = ({ openModal }: any) => {
                 </Link>
 
 
-              <div className=" py-10 space-y-6 text-justify  xl:pr-20">
+              <div className=" pt-10 space-y-6 text-justify  xl:pr-20">
               <p>
                     With the rapid advancements in the field of artificial intelligence, it can be overwhelming to keep up with 
                     the latest tools and technologies. We designed these advance search system to simplify this process and make it easy for
@@ -53,9 +39,15 @@ const GenAI = ({ openModal }: any) => {
                 tools, so you can stay up-to-date with the latest advancements in the field.
 
                 </p>
+
+                <div className=" w-full flex ">
+                  <Link href={'/genai'} className='py-3 w-full bg-[rgb(39,94,79)] text-white font-logo text-lg md:w-1/2 text-center '>
+                        AI database
+                  </Link>
+                </div>
               </div>
 
-
+              
 
 
            </div>
