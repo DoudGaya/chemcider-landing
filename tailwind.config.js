@@ -23,7 +23,8 @@ module.exports = {
       
     },
     fontFamily: {
-      'logo': ['Montserrat', 'sans-serif']
+      'logo': ['Montserrat', 'sans-serif'],
+      'ai': ['Instrument Serif', 'serif']
     },
   },
   plugins: [],

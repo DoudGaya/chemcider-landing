@@ -1,8 +1,12 @@
+import { AiBanner } from "./AiBanner"
+import { AiMain } from "./AiMain"
+
 export const AiHome = () => {
     return (
         <>
         <div className="">
-            Banner here ... 
+            <AiBanner />
+            <AiMain />
         </div>
         </>
     )

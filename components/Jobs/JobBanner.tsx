@@ -7,7 +7,7 @@ import Link from "next/link"
 export const JobBanner = () => {
     return (
         <>
-            <div className=" w-full bg-slate-50 border-b border-slate-300 dark:border-slate-700 dark:bg-slate-950  flex-col flex items-center ">
+            <div className=" w-full pt-20 bg-slate-50 border-b border-slate-300 dark:border-slate-700 dark:bg-slate-950  flex-col flex items-center ">
               
                 <div className=" w-full flex-col md:flex-row justify-center space-y-10 md:space-y-0 items-center xl:justify-between flex py-10 px-[20px] xl:px-[100px] xl:h-[100px] ">
                     <div className=" grid gap-3 grid-cols-3">
@@ -33,7 +33,7 @@ export const JobBanner = () => {
                         </div>
                     </div>
                     <div className="">
-                         <button className=" py-3 px-6 border border-slate-700 hover:bg-slate-300  font-logo">Post a job for free</button>
+                         <button className=" py-3 px-6 border border-slate-700 hover:bg-slate-300 dark:hover:bg-slate-800 font-logo">Post a job for free</button>
                     </div>
                 </div>
              <div className=" w-full py-10 flex items-center  flex-col justify-center md:space-x-6  border-gray-200 md:px-10">

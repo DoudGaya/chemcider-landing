@@ -22,75 +22,70 @@ interface ModalFunc {
 
 function Main(): JSX.Element {
   const [modal, setModal] = useState<boolean>(false);
-
   const closeModal = (): any => {
     return setModal(false)
   }
-  
   const openModal = () => {
     return setModal(true)
   }
 
 
+
   return (
-    <main>
+    <>
   <div className=" flex flex-col ">
-    <Landing />
-    <div className=" xl:w-[1200px] mx-auto">
-    <WhatWeDo />
-    </div>
-    {/* <HomeBanner /> */}
-  <div className="flex flex-col text-slate-900 dark:text-slate-100  w-full">
-    {/* <Navigation /> */}
-    {/* the community */}
+        <Landing />
+        <section className=" border-b border-slate-800">
+            <div className=" xl:w-[1200px] mx-auto">
+                <WhatWeDo />
+            </div>
+        </section>
+              {/* <HomeBanner /> */}
+      <div className="flex flex-col text-slate-900 dark:text-slate-100  w-full">
+              {/* <Navigation /> */}
+              {/* the community */}
       <section className=' bg-white dark:bg-black'>
         <div className=" md:w-full lg:w-[1200px] mx-auto">
             <Community openModal={openModal} />
           </div>
       </section>
-    {/* end of community */}
-
-     {/* PARTNERS */}
-     <section className=' bg-slate-200 dark:bg-black'>
+              {/* end of community */}
+              {/* PARTNERS */}
+     <section className=' bg-slate-200 dark:border-t dark:border-slate-800 dark:bg-black'>
           <div className=' md:w-full lg:w-[1200px] mx-auto'>
-           <Jobs />
+            <Jobs />
           </div>
       </section>
-      {/* END OF PARTNERS */}
-
-       {/* PARTNERS */}
-     <section className='' id='#genai'>
+              {/* END OF PARTNERS */}
+              {/* PARTNERS */}
+     <section className=' dark:bg-slate-900' id='#genai'>
           <div className=' md:w-full lg:w-[1200px] mx-auto'>
            <GenAI openModal={openModal} />
           </div>
       </section>
-      {/* END OF PARTNERS */}
-
-      {/* THE STORE */}
+              {/* END OF PARTNERS */}
+              {/* THE STORE */}
       <section className=' bg-slate-200 w-full dark:bg-black py-10'>
         <div className=" md:w-full lg:w-[1200px] mx-auto ">
             <Store openModal={openModal} />
           </div>
       </section>
-      {/* END OF STORE */}
-
-      {/* PARTNERS */}
-        <section className=''>
+              {/* END OF STORE */}
+              {/* PARTNERS */}
+        <section className=' dark:bg-slate-950'>
           <div className=' md:w-full lg:w-[1200px] mx-auto'>
             <Partners />
           </div>
         </section>
-
-
-           {/* PARTNERS */}
+              {/* PARTNERS */}
         <section className='bg-slate-200 w-full dark:bg-black py-10'>
           <div className=' md:w-full lg:w-[1200px] mx-auto'>
             <Footer />
           </div>
         </section>
-  </div>
- </div>
-    </main>
+      </div>
+    </div>
+    </>
   )
 }
 
