@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const Landing = () => {
     return (
         <>
-        <div className=" h-[95vh] flex  w-full bg-cover " style={ { backgroundImage: `url(${landing.src})`} } >
+        <div className=" h-screen flex  w-full bg-cover " style={ { backgroundImage: `url(${landing.src})`} } >
             <div className=" w-full h-full bg-gradient-to-b backdrop-blur-sm from-black/30 via-slate-800/30 to-slate-900/30 flex flex-col justify-center  items-center">
              <div className=" xl:w-[1200px] w-full h-full flex flex-col justify-center text-center ">
                 <div className=" space-y-6 ">
