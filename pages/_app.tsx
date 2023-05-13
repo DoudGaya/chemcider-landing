@@ -5,6 +5,7 @@ import { DesktopNav } from "@/components/DesktopNav"
 import { useState } from 'react'
 import MobileNav from '@/components/MobileNav'
 import Modal from '@/parts/Modal'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -43,6 +44,7 @@ const toggleModal = () => {
           : '' }
 
       <Component {...pageProps} />
+      <Analytics />
     </>
     
     )
