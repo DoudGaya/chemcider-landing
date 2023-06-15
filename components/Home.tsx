@@ -1,11 +1,8 @@
-
-
 import { useState } from 'react'
-
 import Community from './Community'
 import Footer from '../parts/Footer'
 import GenAI from '../parts/GenerativeAI'
-import Jobs from '../parts/Jobs'
+import Joining from '../parts/Joining'
 import Navigation from '../parts/Navigations'
 import Partners from '../parts/Partners'
 import Store from './Store'
@@ -19,7 +16,6 @@ interface ModalFunc {
 }
 
 
-
 function Main(): JSX.Element {
   const [modal, setModal] = useState<boolean>(false);
   const closeModal = (): any => {
@@ -28,7 +24,6 @@ function Main(): JSX.Element {
   const openModal = () => {
     return setModal(true)
   }
-
 
 
   return (
@@ -53,30 +48,25 @@ function Main(): JSX.Element {
               {/* PARTNERS */}
      <section className=' bg-slate-200 dark:border-t dark:border-slate-800 dark:bg-black'>
           <div className=' md:w-full lg:w-[1200px] mx-auto'>
-            <Jobs />
+            <Joining />
           </div>
       </section>
               {/* END OF PARTNERS */}
               {/* PARTNERS */}
-     <section className=' dark:bg-slate-900' id='#genai'>
+     <section className=' border-y border-gray-700/40 dark:bg-slate-900' id='#genai'>
           <div className=' md:w-full lg:w-[1200px] mx-auto'>
            <GenAI openModal={openModal} />
           </div>
       </section>
               {/* END OF PARTNERS */}
               {/* THE STORE */}
-      <section className=' bg-slate-200 w-full dark:bg-black py-10'>
+      <section className=' w-full border-y border-gray-700/60 dark:bg-black py-10'>
         <div className=" md:w-full lg:w-[1200px] mx-auto ">
             <Store openModal={openModal} />
           </div>
       </section>
               {/* END OF STORE */}
-              {/* PARTNERS */}
-        <section className=' dark:bg-slate-950'>
-          <div className=' md:w-full lg:w-[1200px] mx-auto'>
-            <Partners />
-          </div>
-        </section>
+
               {/* PARTNERS */}
         <section className='bg-slate-200 w-full dark:bg-black py-10'>
           <div className=' md:w-full lg:w-[1200px] mx-auto'>

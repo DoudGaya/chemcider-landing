@@ -1,9 +1,9 @@
 const Navigation = () => {
     return (
-            <div className="sticky z-10 hidden md:flex top-0 border-b border-[rgb(34,176,196)] bg-gradient-to-b dark:from-[rgb(0,10,22)] from-slate-100 to-white dark:to-black shadow-lg h-16 items-center justify-center">
+            <div className="sticky bg-gray-800/30 z-10 hidden md:flex top-0 border-b border-[rgb(34,176,196)] bg-gradient-to-b dark:from-[rgb(0,10,22)] from-slate-100 to-white dark:to-black shadow-lg h-16 items-center justify-center">
                     <div className=" sm:w-[1400px] mx-auto flex justify-between h-full items-center">
             <div className="">
-                <a href="" className='font-bold px-3 '>
+                <a href="" className='font-bold px-3 bg-[rgba(3,12,12,0.92)]'>
                 Chemcider Inc
                 </a>
             </div>

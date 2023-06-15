@@ -53,27 +53,27 @@ export const DesktopNav = () => {
 
     return (
         <>
-          <div className=" bg-gradient-to-b from-black/50 to-transparent hidden z-50 fixed top-0  justify-between text-white dark:border-slate-700 w-full xl:flex py-4 px-[100px]">
+          <div className=" dark:bg-black/40 bg-gray-50/50 text-black hidden z-50 sticky top-0  justify-between dark:text-white dark:border-slate-700 w-full xl:flex py-4 px-[100px]">
                    <Link href={'/'}>
-                      <p className=" text-lg"> Chemcider Inc</p>
+                      <p className=" text-lg font-logo"> Chemcider Inc</p>
                    </Link>
 
                    <div className=" flex space-x-8 items-center h-full">
                        <ul className=" flex space-x-10 h-full">
                            <li className=" h-full">
-                               <Link href={'/'} className=" hover:underline h-full font-ai">Home</Link>
+                               <Link href={'/'} className=" hover:text-primary h-full tracking-wide">Home</Link>
                            </li>
                            <li className=" h-full">
-                               <Link href={'/jobs'} className=" hover:underline h-full font-ai">Jobs</Link>
+                               <Link href={'/articles'} className="hover:text-primary h-full tracking-wide">Articles </Link>
                            </li>
                            <li className=" h-full">
-                               <Link href={'/genai'} className=" hover:underline h-full font-ai">Generative AI</Link>
+                               <Link href={'/genai'} className="hover:text-primary h-full tracking-wide">Generative AI</Link>
                            </li>
                        </ul>
                        <ClickAwayListener onClickAway={ closeModal }>
                        <div  className=" relative ">
-                           <button onClick={toggleModal} className=" border border-slate-500 px-6 rounded-md py-1">
-                                <p>Apps</p>
+                           <button onClick={toggleModal} className=" bg-primary flex items-center justify-center px-6 rounded-md py-2">
+                                <p className="text-white">Apps</p>
                            </button>
                                <div className="" >
                                     { modal && <ModalBanner /> }

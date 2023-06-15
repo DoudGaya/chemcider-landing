@@ -2,7 +2,7 @@ import Link from 'next/link'
 const Header = () => {
     return (
         <div className=" z-10">
-        <div className=" bg-white dark:bg-black dark:text-white sticky top-0 py-4 lg:py-0  w-full flex justify-between px-6 md:px-20 drop-shadow-sm items-center">
+        <div className=" bg-white dark:text-white sticky top-0 py-4 lg:py-0  w-full flex justify-between px-6 md:px-20 drop-shadow-sm items-center">
         <div className="  ">
             <Link href="/" rel="">
                 <h1 className=" font-logo ">Chemcider</h1>

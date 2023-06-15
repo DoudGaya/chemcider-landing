@@ -53,18 +53,17 @@ const Footer = ( {openModal}: any ) => {
                 {urls}
             </div>
             <div className=" dark:text-slate-200 flex flex-col md:border-r px-6">
-                <h3 className=" text-lg font-semibold">Sitemap</h3>
                 <ul className=" flex flex-col space-y-2 my-2">
                     <li className=" w-full">
                         <button onClick={openModal} className=" hover:underline">Home</button>
                     </li>
 
                     <li className=" w-full">
-                        <button onClick={openModal} className=" hover:underline">Jobs</button>
+                        <button onClick={openModal} className=" hover:underline">About Us</button>
                     </li>
                     
                     <li className=" w-full">
-                        <button onClick={openModal} className=" hover:underline">Generative AIs</button>
+                        <button onClick={openModal} className=" hover:underline">Career</button>
                     </li>
                     
                     <li className=" w-full">
@@ -75,12 +74,13 @@ const Footer = ( {openModal}: any ) => {
             </div>
             <div className=" dark:text-slate-200 flex flex-col px-6">
                 <h3 className=" text-lg font-semibold">Contact</h3>
-                <form action="" className=" flex space-y-2 flex-col my-2">
+                
+                {/* <form action="" className=" flex space-y-2 flex-col my-2">
                     <input type="text" className=" w-full bg-slate-200 py-2 px-4 placeholder:text-slate-700 outline-none border border-slate-400 " placeholder="Email" />
                     <input type="text" className=" w-full bg-slate-200 py-2 px-4 placeholder:text-slate-700 outline-none border border-slate-400 " placeholder="Name" />
                     <textarea className=" w-full bg-slate-200 py-2 px-4 placeholder:text-slate-700 outline-none border border-slate-400 h-[100px] " placeholder="Message" ></textarea>
                     <button className=" bg-[rgb(72,149,144)] w-full py-2 ">Send Us a Message</button>
-                </form>
+                </form> */}
             </div>
         </div>
     )

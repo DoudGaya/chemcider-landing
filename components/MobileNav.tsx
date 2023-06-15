@@ -7,10 +7,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-
-
-
-
 const Modal = ( { openModal, toggleModal }: any ) => {
     return (
         <>

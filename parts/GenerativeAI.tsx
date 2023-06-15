@@ -46,13 +46,9 @@ const GenAI = ({ openModal }: any) => {
                   </Link>
                 </div>
               </div>
-
-              
-
-
            </div>
 
-           <div className=" bg-green-500 h-[500px] grid overflow-hidden grid-cols-3">
+           <div className="  h-[500px] grid overflow-hidden grid-cols-3">
                 <Image src={ai1} alt='' className=' h-full object-cover hover:scale-110 cursor-pointer delay-150 transform transition-all ease-linear duration-150 object-full border-x' />
                 <Image src={ai2} alt='' className=' h-full object-cover hover:scale-110 cursor-pointer delay-150 transform transition-all ease-linear duration-150 object-full border-x' />
                 <Image src={ai3} alt='' className=' h-full object-cover hover:scale-110 cursor-pointer delay-150 transform transition-all ease-linear duration-150 object-full border-x' />
