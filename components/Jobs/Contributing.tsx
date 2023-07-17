@@ -7,11 +7,6 @@ interface links {
     url: string,
 }
 
-
-const name: string[] = [ 'ddd' ]
-
-
-console.log(name)
 const navLinks: links[] = [
 
     {
@@ -68,7 +63,7 @@ const Contributing = () => {
             </p>
             <h1 id={'whycontribute'} className=" text-primary text-2xl items-center flex after:text-gray-600 font-raleway after:text-xl cursor-pointer font-bold after:content-['#'] after:ml-2 after:hover:flex after:hidden">Why Contribute?</h1>
             <ul className=" flex flex-col space-y-5">
-                <li className=" text-lg ">
+                <li className="text-lg ">
                     <span className="text-primary ">Leave Your Mark:</span> Your contributions will make a lasting impact on the scientific community and beyond. By sharing your insights, discoveries, and perspectives, you have the power to shape the future of scientific knowledge.
                 </li>
                 <li className="text-lg ">
@@ -77,19 +72,19 @@ const Contributing = () => {
                 your understanding of the world we live in. Discover new fields of study, delve into fascinating research, and broaden your intellectual horizons.
                 </li>
 
-                <li className=" text-lg">
-                <span className="text-primary ">Amplify Your Voice:</span> Our platform provides a powerful voice for scientists, researchers, and enthusiasts from all walks of life. Break down barriers, bridge gaps, and foster collaboration among diverse perspectives.
+                <li className="text-lg">
+                <span className="text-primary">Amplify Your Voice:</span> Our platform provides a powerful voice for scientists, researchers, and enthusiasts from all walks of life. Break down barriers, bridge gaps, and foster collaboration among diverse perspectives.
                  Your contribution can pave the way for groundbreaking discoveries and innovative solutions.
                 </li>
 
-                <li className=" text-lg">
+                <li className="text-lg">
                     <span className="text-primary ">Connect and Collaborate:</span> Forge meaningful connections with experts, 
                     mentors, and aspiring scientists worldwide. Our community thrives on collaboration, encouraging fruitful discussions, and igniting new 
                     collaborations that transcend borders. Together, we can accelerate the pace of scientific progress.
                 </li>
 
-                <li className=" text-lg">
-                <span className="text-primary ">Inspire Future Generations:</span> Your contributions have the
+                <li className="text-lg">
+                <span className="text-primary">Inspire Future Generations:</span> Your contributions have the
                 potential to ignite a spark in young minds and inspire the next generation of scientists. By sharing your knowledge, you empower others to explore, question, and dream. 
                 Be a part of the movement that fuels scientific curiosity and shapes the innovators of tomorrow.
                 </li>

@@ -15,11 +15,17 @@ const query = groq`
 `
 
 
+const dataFetching = async () => {
+   const posts = await client.fetch(query)
+   posts.map( (post: any) => {
+      console.log("author", post?.author);
+   })
+}
 
-export default  function Home() {
 
 
-   // const posts = await client.fetch(query)
+export default function Home() {
+   dataFetching()
     return (
       <main className="">
          <Main />

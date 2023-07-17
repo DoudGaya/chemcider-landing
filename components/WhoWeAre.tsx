@@ -1,5 +1,6 @@
 import engineer from '../public/engineer.jpg'
 import { useState } from 'react'
+import Link from 'next/link'
 
 
 export const WhatWeDo = () => {
@@ -31,8 +32,8 @@ export const WhatWeDo = () => {
                     them advance their research and projects. 
                     Whether you're looking for cutting-edge technology, trusted suppliers, or like-minded peers, we've got you covered.
                 </p>  
-                 <div className=" flex space-x-4 w-full my-6">
-                   <button className=' bg-[rgb(34,177,197)] px-10 py-2 w-full rounded-lg text-blue-100'>Learn More</button>
+                 <div className="flex space-x-4 w-full my-6">
+                   <Link href={'/about'} className=' text-center bg-[rgb(34,177,197)] px-10 py-2 w-full rounded-lg text-blue-100'>Learn More</Link>
                 </div>
                </div>
             </div>

@@ -18,6 +18,7 @@ const links: links [] = [
         url: '/science',
         icon: ( <GiMaterialsScience size={36} /> )
     },
+    
     {
         id: 2,
         name: 'Technology',

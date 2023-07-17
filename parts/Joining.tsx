@@ -1,20 +1,81 @@
 import Link from "next/link"
 import { useState } from "react"
 
+
+
+interface FormValidator {
+    firstName: boolean;
+    surname: boolean;
+    email: boolean;
+    phone: boolean;
+
+}
+
 const Joining = () => {
     const [firstName, setFirstName] = useState('')
     const [surname, setSurname] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
 
+    
+
     const [contributorFeedback, setContributorFeedback] = useState(false)
+    const [ validator, setValidator] = useState <FormValidator> ({
+        firstName: false,
+        surname: false,
+        email: false,
+        phone: false
+    })
 
 
 
     const submitContributor = (event: any) => {
+        // validator 
         event.preventDefault()
-        // make an API post request to submit the records
-        return setContributorFeedback(true)
+
+        if (firstName.length < 2  ) {
+            setValidator((prev) => {
+              return prev =  {...prev, firstName: true}
+            })
+
+        } else {
+            setValidator((prev) => {
+                return prev =  {...prev, firstName: false}
+              })
+        }
+        if (surname.length < 2) {
+            setValidator((prev) => {
+                return prev =  {...prev, surname: true}
+              })
+
+        }  else {
+            setValidator((prev) => {
+                return prev =  {...prev, surname: false}
+              })
+        }
+        if (email.length < 3) {
+            setValidator((prev) => {
+                return prev =  {...prev, email: true}
+              })
+
+        }  else {
+            setValidator((prev) => {
+                return prev =  {...prev, firstName: false}
+              })
+        }
+        if ( phone.length < 6) {
+            setValidator((prev) => {
+                return prev =  {...prev, phone: true}
+              })
+        } else {
+            setValidator((prev) => {
+                return prev =  {...prev, phone: true}
+            })
+
+            // make an API post request to submit the records
+            
+            return setContributorFeedback(true)
+        }
 
     }
 
@@ -42,21 +103,33 @@ const Joining = () => {
                 <div className="px-8  grid gap-y-3 md:grid-cols-2 gap-x-6 ">
                     <label htmlFor="first Name" className=" flex gap-y-4 flex-col ">
                         <p className=" hidden">First Name</p>
-                        <input type="text" onChange={(e) => {setFirstName(e.target.value)}} placeholder="First Name" className=" border-[rgb(34,177,197)] text-[rgb(34,177,197)] font-logo] py-2 px-3 bg-transparent border focus:outline-none rounded-lg " />
+                       <div className=" flex flex-col ">
+                       <input type="text" onChange={(e) => {setFirstName(e.target.value)}} placeholder="First Name" className=" border-[rgb(34,177,197)] text-[rgb(34,177,197)] font-logo] py-2 px-3 bg-transparent border focus:outline-none rounded-lg " />
+                        {validator.firstName && <small className=" text-red-400">First name is required</small>}
+                       </div>
                     </label>
                     <label htmlFor="first Name" className=" flex gap-y-4 flex-col ">
                         <p className=" hidden">Surname</p>
-                        <input type="text" onChange={(e) => {setSurname(e.target.value)}} placeholder="Surname " className=" border-[rgb(34,177,197)] text-[rgb(34,177,197)] font-logo] py-2 px-3 bg-transparent border focus:outline-none rounded-lg " />
+                        <div className=" flex flex-col">
+                            <input type="text" onChange={(e) => {setSurname(e.target.value)}} placeholder="Surname " className=" border-[rgb(34,177,197)] text-[rgb(34,177,197)] font-logo] py-2 px-3 bg-transparent border focus:outline-none rounded-lg " />
+                            {validator.surname && <small className=" text-red-400">Last name is required</small>}
+                        </div>
                     </label>
                 </div>
                 <div className="px-8  grid gap-y-3 md:grid-cols-2 gap-x-6 ">
                     <label htmlFor="first Name" className=" flex gap-y-4 flex-col ">
                         <p className=" hidden">Email Address</p>
-                        <input type="text" onChange={(e) => {setEmail(e.target.value)}} placeholder="Email Address" className=" border-[rgb(34,177,197)] text-[rgb(34,177,197)] font-logo] py-2 px-3 bg-transparent border focus:outline-none rounded-lg " />
+                       <div className=" flex flex-col">
+                            <input type="email" onChange={(e) => {setEmail(e.target.value)}} placeholder="Email Address" className=" border-[rgb(34,177,197)] text-[rgb(34,177,197)] font-logo] py-2 px-3 bg-transparent border focus:outline-none rounded-lg " />
+                           { validator.email && <small className=" text-red-400">Email address is required</small>}
+                       </div>
                     </label>
                     <label htmlFor="first Name" className=" flex gap-y-4 flex-col ">
                         <p className=" hidden">Phone Number</p>
-                        <input type="text" onChange={(e) => {setPhone(e.target.value)}} placeholder="Phone Number " className=" border-[rgb(34,177,197)] text-[rgb(34,177,197)] font-logo] py-2 px-3 bg-transparent border focus:outline-none rounded-lg " />
+                        <div className=" flex flex-col">
+                            <input type="text" onChange={(e) => {setPhone(e.target.value)}} placeholder="Phone Number " className=" border-[rgb(34,177,197)] text-[rgb(34,177,197)] font-logo] py-2 px-3 bg-transparent border focus:outline-none rounded-lg " />
+                            { validator.phone && <small className=" text-red-400">Phone number is required</small>}
+                        </div>
                     </label>
                 </div>
                 <div className=" px-8">

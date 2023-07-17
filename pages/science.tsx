@@ -1,6 +1,6 @@
 
 import { GiMaterialsScience } from 'react-icons/gi'
-import { BlogList } from '@/components/BlogList'
+import { BlogItem } from '@/components/BlogList'
 
 
 const Science = () => {
@@ -19,7 +19,7 @@ const Science = () => {
            
         </div>
         <div className=" max-w-[1000px] flex w-full mx-auto bg-red-400 ">
-          <BlogList />
+          <BlogItem />
         </div>
       </div>
     )

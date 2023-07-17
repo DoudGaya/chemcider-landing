@@ -31,19 +31,21 @@ const toggleModal = () => {
               gtag('config', 'G-73SHRQY3GQ');
         `}
         </Script>
+
         <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-73SHRQY3GQ"></Script>
         <DesktopNav />
        
        
-        <MobileNav  />
+      <div className=" ">
+      <MobileNav  />
           { modal ?
           <div className=" w-full z-50 flex items-center px-6 my-auto h-full justify-center fixed">
             <Modal closeModal={toggleModal}  />
           </div>
-
           : '' }
 
       <Component {...pageProps} />
+      </div>
       <Analytics />
     </>
     

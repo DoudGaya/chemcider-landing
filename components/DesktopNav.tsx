@@ -2,8 +2,6 @@ import Link from "next/link"
 import { useState } from "react"
 import ClickAwayListener from "react-click-away-listener"
 
-
-
 const ModalBanner = () => {
     return (
         <>
@@ -55,7 +53,7 @@ export const DesktopNav = () => {
         <>
           <div className=" dark:bg-black/40 bg-gray-50/50 text-black hidden z-50 sticky top-0  justify-between dark:text-white dark:border-slate-700 w-full xl:flex py-4 px-[100px]">
                    <Link href={'/'}>
-                      <p className=" text-lg font-logo"> Chemcider Inc</p>
+                      <p className=" text-lg font-logo">Chemcider Inc</p>
                    </Link>
 
                    <div className=" flex space-x-8 items-center h-full">

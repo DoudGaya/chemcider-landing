@@ -1,5 +1,5 @@
 import { MdOutlineBiotech } from 'react-icons/md'
-import { BlogList } from '@/components/BlogList'
+import { BlogItem } from '@/components/BlogList'
 
 
 const Technology = () => {
@@ -13,13 +13,11 @@ const Technology = () => {
                     <p className='text-7xl font-logo text-primary'>Science Dome</p>
                 </div>
                 <div className=" h-1/6 grid grid-cols-5 w-full">
-                 
                 </div>
             </div>
-           
         </div>
         <div className=" max-w-[1000px] flex w-full mx-auto bg-red-400 ">
-          <BlogList />
+            <BlogItem />
         </div>
       </div>
     )
