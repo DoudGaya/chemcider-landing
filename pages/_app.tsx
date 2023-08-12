@@ -34,6 +34,18 @@ const toggleModal = () => {
         <DesktopNav />
        
        
+      <Script>
+            {
+              `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-PLV25CDVTC');
+              `
+            }
+      </Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-PLV25CDVTC"></Script>
       <div className=" ">
       <MobileNav  />
           { modal ?
