@@ -8,9 +8,7 @@ import Modal from '@/parts/Modal'
 import { Analytics } from '@vercel/analytics/react'
 
 export default function App({ Component, pageProps }: AppProps) {
-
-  const [modal, setModal] = useState<boolean>(false);
-
+const [modal, setModal] = useState<boolean>(false);
 
 const openModal = () => {
    return setModal(true)

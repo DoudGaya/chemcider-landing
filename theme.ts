@@ -11,7 +11,6 @@ const props = {
     '--warning': 'rgba(223,216,76,0.53)'
 }
 
-
 export const chemciderTheme = buildLegacyTheme({
     
     '--brand-primary': props["--primary"],

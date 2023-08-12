@@ -1,5 +1,5 @@
 import Contributing from "./Contributing"
-import { JobBanner } from "./JobBanner"
+import { JobBanner } from "./ContributeBanner"
 
 export const ContributionGuides = () => {
     return (

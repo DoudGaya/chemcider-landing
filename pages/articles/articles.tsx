@@ -5,9 +5,9 @@ import { groq } from 'next-sanity'
 
 
 
-const articlesQuery = groq`
-*[_type='articles']
-`
+// const articlesQuery = groq`
+// *[_type='articles']
+// `
 
 
 const articles = () => {

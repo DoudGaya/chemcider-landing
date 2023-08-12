@@ -39,8 +39,10 @@ export const Landing = () => {
             <div className="w-full h-full dark:bg-gradient-to-b backdrop-blur-sm dark:from-black dark:via-black dark:to-slate-900 flex flex-col justify-center items-center">
              <div className="xl:max-w-[1200px] w-full h-full flex items-center text-center py-16 lg:py-0 justify-center">
                 <div className="space-y-6 flex justify-center w-full flex-col px-4 lg:px-0">
-                    <div className="xl:text-7xl text-2xl dark:text-white font-semibold font-logo">Welcome to <Link href={'/'} className=' text-[rgb(34,177,197)]'>Chemcider Inc. </Link></div>
-                    <div className="xl:text-2xl font-raleway dark:text-white text-xl">Free <span className=' hover:underline cursor-pointer underline-offset-2 text-[rgb(34,177,197)]'>open-source</span> learning resource for scientists and technicians</div>
+                    {/* <div className="xl:text-7xl text-2xl dark:text-white font-semibold font-logo">Welcome to<Link href={'/'} className=' text-[rgb(34,177,197)]'>Chemcider Inc. </Link></div> */}
+                    <div className="xl:text-7xl text-2xl dark:text-white font-semibold font-logo">Happy Birthday <Link href={'/'} className=' text-[rgb(34,177,197)]'>Emerald❤️. </Link></div>
+                    <div className="xl:text-2xl font-raleway dark:text-white text-xl"> Thanks for beeing the light in my life <span className=' hover:underline cursor-pointer underline-offset-2 text-[rgb(34,177,197)]'>LoveyDovey</span></div>
+                    {/* <div className="xl:text-2xl font-raleway dark:text-white text-xl">Free <span className=' hover:underline cursor-pointer underline-offset-2 text-[rgb(34,177,197)]'>open-source</span> learning resource for scientists and technicians</div> */}
                     <div className="flex flex-col xl:flex-row xl:space-x-6 justify-center pt-10 px-10 lg:px-0 xl:space-y-0 space-y-8">
                     <div className="grid lg:grid-cols-3 gap-y-6 lg:gap-x-10">
                     {

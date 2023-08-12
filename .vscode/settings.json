@@ -4,5 +4,9 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.autopep8"
   },
-  "python.formatting.provider": "none"
+  "python.formatting.provider": "none",
+  "prettier.endOfLine": "auto",
+  "prettier.htmlWhitespaceSensitivity": "strict",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleAttributePerLine": true
 }

@@ -7,7 +7,6 @@ const imageBuilder = createImageUrlBuilder({
   projectId: projectId || '',
   dataset: dataset || '',
 })
-
 export const urlForImage = (source: Image) => {
   return imageBuilder?.image(source).auto('format').fit('max')
 }
