@@ -18,7 +18,7 @@ export default function Document() {
           />
           <meta property="og:title" content="" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Twitter Bio Generator" />
+          <meta name="twitter:title" content="Chemcider Inc." />
           <meta
             name="twitter:description"
             content="Science, Technology and Engineering"
