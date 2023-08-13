@@ -159,7 +159,7 @@ export const ContributingForm = () => {
                                 <p>Engineering</p>
                             </label>
                         </div>
-                            </fieldset>
+                    </fieldset>
                             
                   <fieldset className=" my-6 border w-full py-3 px-4 border-slate-400 rounded-lg ">
                         <legend className=" px-2"> <p className=" text-primary font-semibold font-primary">Education</p></legend>
