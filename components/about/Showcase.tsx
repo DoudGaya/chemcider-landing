@@ -48,11 +48,11 @@ export const Showcase = () => {
   return (
     <div style={{ backgroundImage: `url(${bg.src})`}} className=' bg-cover bg-blend-multiply bg-primary bg-center w-full '>
       <div className=" flex flex-col py-10 max-w-4xl mx-auto ">
-        <div className="grid grid-cols-2 gap-y-6 py-6">
+        <div className="grid grid-cols-1 px-4 lg:grid-cols-2 gap-y-6 py-6">
           {
             items.length > 0 && items.map((item) => {
               return (
-                <div key={item.id} className=" bg-slate-600/70 py-6 border-x mx-2 space-y-6 px-4">
+                <div key={item.id} className=" bg-slate-600/70 py-6 border-x-0 border-primary/50 lg:border-x mx-2 space-y-6 px-4">
                   <h3 className=' font-raleway text-2xl'>{item.title} </h3>
                   <p className=' font-sans text-justify font-thin'> {item.describe} </p>
                 </div>

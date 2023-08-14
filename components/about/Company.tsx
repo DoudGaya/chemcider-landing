@@ -11,7 +11,7 @@ export const Company = () => {
       <div className=" flex flex-col space-y-4 my-auto h-full justify-center">
     <div className=" space-y-2">
         <p className=' lg:text-3xl text-2xl font-semibold font-raleway '>About Chemcider</p>
-            <div className=" text-justify font-logo">
+            <div className=" text-justify font-raleway">
                 Welcome to Chemcider Inc., your gateway to boundless knowledge in the realms of science,
                 technology, and engineering. At Chemcider, we believe that learning is the catalyst
                 for progress, and our mission is to foster a community where curiosity knows no bounds.
@@ -20,7 +20,7 @@ export const Company = () => {
                   
                    <div className=" space-y-2">
         <p className=' lg:text-3xl text-2xl font-semibold font-raleway '>Our Vision</p>
-            <div className=" text-justify font-logo">
+            <div className=" text-justify font-raleway">
                 Our vision is a world where anyone with a thirst for knowledge can quench
                         it freely and effortlessly. We aspire to be the global hub where individuals from every corner of the Earth can
                         access, share, and collaborate on cutting-edge insights in science, technology, and engineering.
@@ -31,7 +31,7 @@ export const Company = () => {
        </div>
       </div>
       <div className="">
-        <Image src={tech} className=' h-full object-cover object-center' alt='Interlude Break' />
+        <Image src={tech} className=' lg:h-full h-[200px] object-cover object-center' alt='Interlude Break' />
       </div>
       </div>
      </div>
