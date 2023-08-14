@@ -1,6 +1,28 @@
 
 import Image from 'next/image'
 import logo from '../../public/c.png'
+import bg from '../../public/about/engineering.jpg'
+
+
+import { client } from "@/lib/sanity.client"
+import { groq } from "next-sanity"
+
+
+const query = groq`
+*[_type == "post"]{
+   ...,
+   author->,
+   categories->,
+} | order( _createdAt desc)
+`
+
+
+const dataFetching = async () => {
+   const posts = await client.fetch(query)
+   posts.map( (post: any) => {
+      console.log("author", post?.author);
+   })
+}
 
 
 const topics = [
@@ -27,16 +49,17 @@ const topics = [
 ]
 
 export const AboutBanner = () => {
+       // dataFetching()
     return (
-        <div className=" w-full flex flex-col ">
-            <div className=" py-10 bg-gradient-to-r bg-primary">
-                <div className="  mx-auto max-w-4xl">
+        <div className=" w-full flex flex-col bg-cover bg-center bg-blend-overlay bg-stone-600/40 " style={{ backgroundImage: `url(${bg.src})`}}>
+            <div className=" py-20 bg-gradient-to-r">
+                <div className="  mx-auto max-w-4xl bg-primary px-4 py-6 rounded-lg">
                     <div className=" flex space-x-5 my-auto h-full items-center">
-                    <div className=" h-[200px] flex-none shadow-lg w-[200px] flex overflow-hidden rounded-lg">
+                    <div className=" h-[150px] flex-none shadow-lg w-[150px] flex overflow-hidden rounded-lg">
                         <Image alt='chemcider' src={logo} className=' w-full object-cover object-center' />
                     </div>
                         <div className=" flex flex-col space-y-4">
-                            <p className=' font-logo text-2xl'>Knowledge is free and should be accessible to everyone. Learn from different topics and different authors </p>
+                            <p className=' font-logo text-xl'>Knowledge is free and should be accessible to everyone. Learn from different topics and different authors </p>
                             <div className=" grid grid-cols-4 gap-4">
                                 {
                                     topics.map((topic) => {
@@ -53,24 +76,7 @@ export const AboutBanner = () => {
                 
                 </div>
             </div>
-        <div className=" grid max-w-4xl gap-x-10 py-10 mx-auto grid-cols-2">
-                <div className=" flex flex-col space-y-4">
-                    <h3 className=" font-logo text-2xl">About Chemcider Inc</h3>
-                    <p className=" text-justify ">
-                        Welcome to Chemcider Inc., your gateway to boundless knowledge in the realms of science,
-                        technology, and engineering. At Chemcider, we believe that learning is the catalyst
-                        for progress, and our mission is to foster a community where curiosity knows no bounds.
-                    </p>
-                </div>
-               <div className=" flex flex-col space-y-4">
-                    <h3 className=" font-logo text-2xl">Our Vision</h3>
-                    <p className=" text-justify">
-                        Our vision is a world where anyone with a thirst for knowledge can quench
-                        it freely and effortlessly. We aspire to be the global hub where individuals from every corner of the Earth can
-                        access, share, and collaborate on cutting-edge insights in science, technology, and engineering.
-                    </p>
-                </div>
-            </div>
+       
 
         </div>
     )

@@ -51,7 +51,7 @@ export const DesktopNav = () => {
 
     return (
         <>
-          <div className=" dark:bg-black/40 bg-gray-50/50 text-black hidden z-50 sticky top-0  justify-between dark:text-white dark:border-slate-700 w-full xl:flex py-4 px-[100px]">
+          <div className=" dark:bg-black/80 bg-gray-50/80 text-black hidden z-50 sticky top-0  justify-between dark:text-white dark:border-slate-700 w-full xl:flex py-4 px-[100px]">
                    <Link href={'/'}>
                       <p className=" text-lg font-logo">Chemcider Inc</p>
                    </Link>
@@ -62,6 +62,9 @@ export const DesktopNav = () => {
                                <Link href={'/'} className=" hover:text-primary h-full tracking-wide">Home</Link>
                            </li>
                            <li className=" h-full">
+                               <Link href={'/about'} className="hover:text-primary h-full tracking-wide">Articles </Link>
+                        </li>
+                         <li className=" h-full">
                                <Link href={'/articles'} className="hover:text-primary h-full tracking-wide">Articles </Link>
                            </li>
                            <li className=" h-full">

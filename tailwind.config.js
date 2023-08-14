@@ -8,28 +8,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
 
       colors: {
         'primary': 'rgb(34,177,197)',
       },
-
-      keyframes: {
-        wiggle: {
-          '0%, 100%': { transform: 'rotate(-100deg)' },
-          '50%': { transform: 'rotate(100deg)' },
-        }
-      }
       
     },
     fontFamily: {
       'logo': ['Montserrat', 'sans-serif'],
       'ai': ['Instrument Serif', 'serif'],
       'raleway': ['Raleway', 'sans-serif'],
+       'sans': ['Open Sans', 'sans-serif']
     },
   },
   plugins: [],
