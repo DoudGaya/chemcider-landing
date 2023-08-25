@@ -22,6 +22,27 @@ export default {
       name: 'phone',
       type: 'string',
       title: 'Phone Number'
-    }
+    },
+     {
+      name: 'gender',
+      type: 'string',
+      title: 'Gender'
+    },
+     {
+      name: 'profession',
+      type: 'string',
+      title: 'Profession'
+    },
+   
+    {
+      name: 'qualification',
+      type: 'string',
+      title: 'Qualification'
+    },
+     {
+      name: 'field',
+      type: 'string',
+      title: 'Field'
+    },
   ]
 }

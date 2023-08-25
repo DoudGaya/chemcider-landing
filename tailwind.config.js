@@ -11,14 +11,15 @@ module.exports = {
 
       colors: {
         'primary': 'rgb(34,177,197)',
+        'secondary': '#489590',
+        'brand-grey': '#535353'
       },
       
     },
     fontFamily: {
       'logo': ['Montserrat', 'sans-serif'],
-      'ai': ['Instrument Serif', 'serif'],
       'raleway': ['Raleway', 'sans-serif'],
-       'sans': ['Open Sans', 'sans-serif']
+      'sans': ['Open Sans', 'sans-serif']
     },
   },
   plugins: [],

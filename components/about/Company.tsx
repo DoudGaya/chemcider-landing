@@ -6,7 +6,7 @@ import tech from '../../public/about/technology.jpg'
 export const Company = () => {
   return (
 
-<div className=" w-full bg-stone-700">
+<div className=" w-full ">
     <div className=" grid max-w-6xl mx-auto grid-cols-1 px-10 lg:px-0 lg:grid-cols-2 gap-6 w-full py-20">
       <div className=" flex flex-col space-y-4 my-auto h-full justify-center">
     <div className=" space-y-2">

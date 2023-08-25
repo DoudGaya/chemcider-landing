@@ -1,4 +1,4 @@
-import { AiHome } from "@/components/genai/AiHome"
+import { AiHome } from "@/components/learning/LearningHome"
 
 const AiDB = () => {
     return (

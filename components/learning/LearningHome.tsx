@@ -1,4 +1,4 @@
-import { AiBanner } from "./AiBanner"
+import { AiBanner } from "./LearningBanner"
 import { AiMain } from "./AiMain"
 
 export const AiHome = () => {

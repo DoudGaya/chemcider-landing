@@ -1,6 +1,9 @@
 import Link from "next/link"
 import { useState } from "react"
+import chemcider from '../public/chemcider.png'
+import chemciderDark from '../public/chemcider_dark 1.png'
 import ClickAwayListener from "react-click-away-listener"
+import Image from "next/image"
 
 const ModalBanner = () => {
     return (
@@ -51,9 +54,12 @@ export const DesktopNav = () => {
 
     return (
         <>
-          <div className=" dark:bg-black/80 bg-gray-50/80 text-black hidden z-50 sticky top-0  justify-between dark:text-white dark:border-slate-700 w-full xl:flex py-4 px-[100px]">
+          <div className=" dark:bg-black/80 items-center border-b border-primary bg-white text-black hidden z-50 sticky top-0  justify-between dark:text-white dark:border-slate-700 w-full xl:flex py-4 px-[100px]">
                    <Link href={'/'}>
-                      <p className=" text-lg font-logo">Chemcider Inc</p>
+                        <div className=" h-4 flex items-center overflow-hidden ">
+                            <Image src={chemcider} alt="Chemcider Inc" className=" block h-5 object-contain object-left dark:hidden" />
+                            <Image src={chemciderDark} alt="Chemcider Inc" className="hidden h-5 object-contain object-left dark:block" />
+                        </div>
                    </Link>
 
                    <div className=" flex space-x-8 items-center h-full">
@@ -62,13 +68,13 @@ export const DesktopNav = () => {
                                <Link href={'/'} className=" hover:text-primary h-full tracking-wide">Home</Link>
                            </li>
                            <li className=" h-full">
-                               <Link href={'/about'} className="hover:text-primary h-full tracking-wide">Articles </Link>
+                               <Link href={'/about'} className="hover:text-primary h-full tracking-wide">About </Link>
                         </li>
                          <li className=" h-full">
                                <Link href={'/articles'} className="hover:text-primary h-full tracking-wide">Articles </Link>
                            </li>
                            <li className=" h-full">
-                               <Link href={'/genai'} className="hover:text-primary h-full tracking-wide">Generative AI</Link>
+                               <Link href={'/learning'} className="hover:text-primary h-full tracking-wide">Learning</Link>
                            </li>
                        </ul>
                        <ClickAwayListener onClickAway={ closeModal }>
@@ -77,7 +83,7 @@ export const DesktopNav = () => {
                                 <p className="text-white">Apps</p>
                            </button>
                                <div className="" >
-                                    { modal && <ModalBanner /> }
+                                    {modal && <ModalBanner />}
                                </div>
                        </div>
                     </ClickAwayListener>

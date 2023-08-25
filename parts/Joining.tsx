@@ -10,11 +10,15 @@ const Joining = () => {
 
     
 
-    const [contributorFeedback, setContributorFeedback] = useState(false)
+    const [contributorFeedback, setContributorFeedback] = useState(true)
+
+    const feedBack = () => {
+        console.log('it worked')
+    }
 
 
     return (
-        <div className=" grid xl:grid-cols-2 py-[90px] xl:py-[150 border-slate-400  font-logo] px] space-y-6">
+        <div id='contribution' className=" grid xl:grid-cols-2 py-[90px] xl:py-[150 border-slate-400  font-logo] px] space-y-6">
            <div className=" flex w-full space-y-4 flex-col px-10">
             <h3 className="text-xl font-bold  text-slate-900 dark:text-slate-400 font-logo ">Become a Publisher in Chemcider</h3>
                 <p className=" dark:text-white  md:px-0 text-justify ">
@@ -31,11 +35,14 @@ const Joining = () => {
            </div>
            {
                 !contributorFeedback ?
-               <ContributingForm />
+               <ContributingForm feedback={feedBack} />
            :
             ( 
-            <div className=" px-10">
-                <p className=" my-10">Thanks for joining our publishers list. check this <Link className="  text-slate-900 dark:text-slate-400" href={'/contribution'}>link</Link> to find out about our contibution guidlines</p> 
+                        <div className=" px-10 py rounded-xl flex-col text-center flex border-secondary border-2 items-center justify-center">
+                            <h3 className=" text-2xl ">Thanks for joining our Authors group</h3>
+                            <p className=" text-xl font-raleway">
+                                . check this <Link className=" text-primary underline" href={'/contribution'}>link</Link> to learn more about our contributing guidelines
+                            </p> 
             </div>
             )
            }
