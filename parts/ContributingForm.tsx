@@ -226,7 +226,7 @@ export const ContributingForm = () => {
                                   <select
                                          {...register('field', { required: true })}  
                                         onChange={handleFormData} className=" border-slate-600 text-slate-900  dark:text-slate-400 after:px-3 font-logo] py-2 before:px-10 px-3 bg-transparent border focus:outline-none rounded-lg " id="">
-                                        <option  value="" selected disabled className=" py-3 px-3 bg-slate-200 dark:bg-slate-700">Field of Study</option>
+                                        <option  selected disabled className=" py-3 px-3 bg-slate-200 dark:bg-slate-700">Field of Study</option>
                                         <option value="Physical Science" className=" py-3 bg-slate-200 dark:bg-slate-700">Physical Science</option>
                                         <option value="Health Science" className=" py-3 bg-slate-200 dark:bg-slate-700">Health Science</option>
                                         <option value="Technology" className=" py-3 bg-slate-200 dark:bg-slate-700">Technology</option>
