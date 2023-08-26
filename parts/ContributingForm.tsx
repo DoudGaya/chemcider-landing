@@ -1,5 +1,6 @@
 import React, { useState, } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form';
+import Link from 'next/link';
 
 interface FormInputs {
     firstName: string
@@ -13,7 +14,7 @@ interface FormInputs {
 }
 
 
-export const ContributingForm = ( {feedBack}: any ) => {
+export const ContributingForm = () => {
 
 
     const { register,  formState: { errors }, handleSubmit } = useForm<FormInputs>()
@@ -28,6 +29,15 @@ export const ContributingForm = ( {feedBack}: any ) => {
         gender: '',
         field: '',
     })
+
+        
+
+    const [contributorFeedback, setContributorFeedback] = useState(false)
+
+    const feedBack = () => {
+        setContributorFeedback(true)
+    }
+
     
     
     const handleFormData = (event: any) => {
@@ -49,17 +59,20 @@ export const ContributingForm = ( {feedBack}: any ) => {
         } catch (error) {
             console.log(error)
         }
-    // feedBack()
+    feedBack()
     }
 
 
   return (
       <div >
-          <form onSubmit={handleSubmit(onSubmit)} className=" flex flex-col">
+        {
+            !contributorFeedback ?
+              
+        <form onSubmit={handleSubmit(onSubmit)} className=" flex flex-col">
               
               <div className=" px-8">
                 <fieldset className="border w-full py-3 space-y-3 px-4 border-slate-400 rounded-lg ">
-                <legend className=" px-2"><p className=" text-primary font-semibold font-primary">Profession</p></legend>
+                <legend className=" px-2"><p className=" font-raleway text-primary text-2xl font-semibold font-primary">Personal Data</p></legend>
               <div className=" grid gap-y-3 md:grid-cols-2 gap-x-6 ">                  
                     <label htmlFor="first Name" className=" flex gap-y-4 flex-col ">
                         <p className=" hidden">First Name</p>
@@ -144,8 +157,8 @@ export const ContributingForm = ( {feedBack}: any ) => {
               
 
                 <div className="px-8">
-                    <fieldset className=" border w-full py-3 px-4 border-slate-400 rounded-lg ">
-                        <legend className=" px-2"><p className=" text-primary font-semibold font-primary">Profession</p></legend>
+                    <fieldset className=" border w-full py-3 px-4 border-slate-400 my-6 rounded-lg ">
+                        <legend className=" px-2"><p className=" text-primary font-raleway text-2xl font-semibold font-primary">Highest Qualification</p></legend>
                       <div className=" grid grid-cols-1  lg:gap-y-0 gap-y-4 lg:gap-x-3">
                            <label htmlFor="qualification" className=" flex gap-y-4 flex-col ">
                                 <p className=" hidden">Degree Type</p>
@@ -153,7 +166,7 @@ export const ContributingForm = ( {feedBack}: any ) => {
                                   <select
                                         {...register('qualification', { required: true })}  
                                         onChange={handleFormData} className=" border-slate-600 text-slate-900  dark:text-slate-400 after:px-3 font-logo] py-2 before:px-10 px-3 bg-transparent border focus:outline-none rounded-lg " id="">
-                                        <option  value="BSC" selected disabled className="py-3 px-3 bg-slate-200 dark:bg-slate-700">Select Your Profession</option>
+                                        <option  value="BSC" selected disabled className="py-3 px-3 bg-slate-200 dark:bg-slate-700">Select Your Qualification</option>
                                         <option value="PHD" className="py-3 bg-slate-200 dark:bg-slate-700">PhD</option>
                                         <option value="MSC" className="py-3 bg-slate-200 dark:bg-slate-700">Master's Degree</option>
                                         <option value="BSC" className="py-3 bg-slate-200 dark:bg-slate-700">Bachelor's Degree</option>
@@ -205,33 +218,32 @@ export const ContributingForm = ( {feedBack}: any ) => {
                     </fieldset>
                             
                   <fieldset className=" my-6 border w-full py-3 px-4 border-slate-400 rounded-lg ">
-                        <legend className=" px-2"> <p className=" text-primary font-semibold font-primary">Education</p></legend>
+                        <legend className=" px-2"> <p className=" text-primary text-2xl font-raleway font-semibold font-primary">Education</p></legend>
                         <div className="  grid gap-y-3 md:grid-cols-1 gap-x-6 ">
-                            <label htmlFor="qualification" className=" flex gap-y-4 flex-col ">
+                            <label htmlFor="field" className=" flex gap-y-4 flex-col ">
                                 <p className=" hidden">Degree Type</p>
                                 <div className=" flex flex-col">
                                   <select
-                                        name='qualification'
+                                         {...register('field', { required: true })}  
                                         onChange={handleFormData} className=" border-slate-600 text-slate-900  dark:text-slate-400 after:px-3 font-logo] py-2 before:px-10 px-3 bg-transparent border focus:outline-none rounded-lg " id="">
-                                        <option  value="BSC" selected disabled className=" py-3 px-3 bg-slate-200 dark:bg-slate-700">Highest Qualification</option>
-                                        <option value="PHD" className=" py-3 bg-slate-200 dark:bg-slate-700">PhD</option>
-                                        <option value="MSC" className=" py-3 bg-slate-200 dark:bg-slate-700">Master's Degree</option>
-                                        <option value="BSC" className=" py-3 bg-slate-200 dark:bg-slate-700">Bachelor's Degree</option>
-                                        <option value="undergraduate" className=" py-2 px-3 bg-slate-200 dark:bg-slate-700">Undergraduate</option>
-                                        <option value="other" className=" py-2 px-3 bg-slate-200 dark:bg-slate-700">Other</option>
+                                        <option  value="" selected disabled className=" py-3 px-3 bg-slate-200 dark:bg-slate-700">Field of Study</option>
+                                        <option value="Physical Science" className=" py-3 bg-slate-200 dark:bg-slate-700">Physical Science</option>
+                                        <option value="Health Science" className=" py-3 bg-slate-200 dark:bg-slate-700">Health Science</option>
+                                        <option value="Technology" className=" py-3 bg-slate-200 dark:bg-slate-700">Technology</option>
+                                        <option value="Engineering" className=" py-2 px-3 bg-slate-200 dark:bg-slate-700">Engineering</option>
                                   </select>  
                                   
                                 </div>
                             </label>
-                            <label htmlFor="field" className=" flex gap-y-4 flex-col ">
+                            <label htmlFor="profession" className=" flex gap-y-4 flex-col ">
                                 <p className=" hidden">Field of Study</p>
                                 <div className=" flex flex-col">
                                   <input
-                                       {...register('field', {required: true})}  
-                                        name='field'
+                                       {...register('profession', {required: true})}  
+                                        // name='field'
                                         type="text"
                                         onChange={handleFormData}
-                                        placeholder="Field of Study"
+                                        placeholder="Your profession: e.g. Physics"
                                         className=" border-slate-400 focus:dark:bg-slate-900 active:dark:bg-slate-900 text-slate-900 dark:text-slate-400 font-logo] py-2 px-3 bg-transparent border focus:outline-none rounded-lg "
                                   />
                                   {/* { errors.field && <small className=" text-red-400">Phone number is required</small>} */}
@@ -246,7 +258,21 @@ export const ContributingForm = ( {feedBack}: any ) => {
                         <button type='submit' className=' bg-[rgb(34,177,197)] px-10 py-2 w-full rounded-lg text-blue-100'>Submit</button>
                     </div>
                 </div>
-                </form>
+          </form>
+          
+          :
+            ( 
+            <div className=" w-full px-8">
+                <div className=" px-10 py rounded-xl flex-col space-y-2 py-10 text-center flex border-secondary border-2 items-center justify-center">
+                <small className=' text-lg font-raleway '>Thanks</small>
+                <h3 className=" text-2xl text-secondary ">Your Application have been submitted</h3>
+                <p className=" text-xl font-raleway">
+                    check this <Link className=" text-primary underline" href={'/contribution'}>link</Link> to learn more about our contributing guidelines
+                </p> 
+            </div>
+          </div>
+          )
+        }
     </div>
   )
 }
