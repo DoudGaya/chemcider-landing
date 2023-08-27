@@ -170,6 +170,7 @@ export const ContributingForm = () => {
                                         <option value="PHD" className="py-3 bg-slate-200 dark:bg-slate-700">PhD</option>
                                         <option value="MSC" className="py-3 bg-slate-200 dark:bg-slate-700">Master's Degree</option>
                                         <option value="BSC" className="py-3 bg-slate-200 dark:bg-slate-700">Bachelor's Degree</option>
+                                        <option value="HND" className="py-3 bg-slate-200 dark:bg-slate-700">HND</option>
                                         <option value="undergraduate" className=" py-2 px-3 bg-slate-200 dark:bg-slate-700">Undergraduate</option>
                                         <option value="other" className=" py-2 px-3 bg-slate-200 dark:bg-slate-700">Other</option>
                                   </select>  
