@@ -4,6 +4,7 @@ import chemcider from '../public/chemcider.png'
 import chemciderDark from '../public/chemcider_dark 1.png'
 import ClickAwayListener from "react-click-away-listener"
 import Image from "next/image"
+import {BsDiscord} from 'react-icons/bs'
 
 const ModalBanner = () => {
     return (
@@ -62,32 +63,29 @@ export const DesktopNav = () => {
                         </div>
                    </Link>
 
-                   <div className=" flex space-x-8 items-center h-full">
+                   <div className=" flex space-x-8 w-full px-3 items-center h-full">
                        <ul className=" flex space-x-10 h-full">
-                           <li className=" h-full">
+                           <li className=" h-full flex items-center my-auto">
                                <Link href={'/'} className=" hover:text-primary h-full tracking-wide">Home</Link>
                            </li>
-                           <li className=" h-full">
+                           <li className=" h-full flex items-center my-auto">
                                <Link href={'/about'} className="hover:text-primary h-full tracking-wide">About </Link>
                         </li>
-                         <li className=" h-full">
+                         <li className=" h-full flex items-center my-auto">
                                <Link href={'/articles'} className="hover:text-primary h-full tracking-wide">Articles </Link>
                            </li>
-                           <li className=" h-full">
+                           <li className=" h-full flex items-center my-auto">
                                <Link href={'/learning'} className="hover:text-primary h-full tracking-wide">Learning</Link>
-                           </li>
+                        </li>
+                        
+                        <li className=" w-full h-full flex items-center">
+
+                            <Link href={'https://discord.gg/RhGuDGSD'} className=" bg-primary space-x-3 flex items-center justify-center px-8 overflow-hidden rounded-md py-2">
+                                <BsDiscord className=" h-8 w-8 flex-none" />
+                                <p className="text-white flex-none"> Discord</p>
+                            </Link> 
+                        </li>
                        </ul>
-                       <ClickAwayListener onClickAway={ closeModal }>
-                       <div  className=" relative ">
-                           <button onClick={toggleModal} className=" bg-primary flex items-center justify-center px-6 rounded-md py-2">
-                                <p className="text-white">Apps</p>
-                           </button>
-                               <div className="" >
-                                    {modal && <ModalBanner />}
-                               </div>
-                       </div>
-                    </ClickAwayListener>
-                     
                    </div>
                 </div>
         </>
