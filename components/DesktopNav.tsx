@@ -71,9 +71,12 @@ export const DesktopNav = () => {
                            <li className=" h-full flex items-center my-auto">
                                <Link href={'/about'} className="hover:text-primary h-full tracking-wide">About </Link>
                         </li>
+                        {/* <li className=" h-full flex items-center my-auto">
+                            <Link href={'/articles'} className="hover:text-primary h-full tracking-wide">Articles </Link>
+                        </li> */}
                          <li className=" h-full flex items-center my-auto">
-                               <Link href={'/articles'} className="hover:text-primary h-full tracking-wide">Articles </Link>
-                           </li>
+                            <Link href={'/store'} className="hover:text-primary h-full tracking-wide">Store</Link>
+                        </li>
                            <li className=" h-full flex items-center my-auto">
                                <Link href={'/learning'} className="hover:text-primary h-full tracking-wide">Learning</Link>
                         </li>
@@ -81,7 +84,7 @@ export const DesktopNav = () => {
                         <li className=" w-full h-full flex items-center">
 
                             <Link href={'https://discord.gg/RhGuDGSD'} className=" bg-primary space-x-3 flex items-center justify-center px-8 overflow-hidden rounded-md py-2">
-                                <BsDiscord className=" h-8 w-8 flex-none" />
+                                <BsDiscord className="h-8 w-8 fill-white flex-none" />
                                 <p className="text-white flex-none"> Discord</p>
                             </Link> 
                         </li>
