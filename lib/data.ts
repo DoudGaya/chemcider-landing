@@ -4,6 +4,15 @@ import product3 from '../public/products/product3.png'
 import product4 from '../public/products/product4.png'
 import product5 from '../public/products/product5.png'
 import product6 from '../public/products/product6.png'
+import { StaticImageData } from 'next/image'
+
+
+interface StoreContent {
+    id: number;
+    svg: StaticImageData;
+    title: string;
+    message: string
+}
 
 //
 
@@ -46,7 +55,7 @@ export const productImages = [
 ]
 
 
-export const storeContents = [
+export const storeContents: StoreContent[] = [
     {
         id: 1,
         svg: lab,

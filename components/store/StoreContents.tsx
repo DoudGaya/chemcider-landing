@@ -1,18 +1,36 @@
 import React from 'react'
 import { StoreImage } from '../StoreImages'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { storeContents } from '@/lib/data'
 
 
+interface StoreContent {
+    id: number;
+    svg: StaticImageData;
+    title: string;
+    message: string
+}
 
 
-const WhyChooseUs = () => {
+const WhyChooseUs = ({ single }: {single: StoreContent}) => {
+    console.log(single)
     return (
-        <div className="">
-            Hello
+        <div className=" flex flex-col justify-center  text-center items-center">
+            <span className=' p-4 border-2 border-primary rounded-full my-2'>
+                <Image src={single.svg} alt={single.title} className=' h-10 w-10' />
+            </span>
+            <h3 className=' font-poppin'>{single.title}</h3>
+            <p className=' my-6 font-light font-raleway '>
+                {single.message}
+            </p>
+            
         </div>
     )
 }
+
+const storeItems = storeContents.map((single) => {
+    return <WhyChooseUs single={single} />
+})
 
 
 
@@ -45,10 +63,8 @@ export const StoreContents = () => {
                   <div className=" flex w-full justify-center ">
                       <h3 className=' font-raleway text-center text-2xl '>Explore Our Extensive Range of Products</h3>
                   </div>
-                  <div className=" grid grid-cols-3">
-                      <div className=" flex flex-col">
-                         <WhyChooseUs />
-                      </div>
+                  <div className=" grid grid-cols-3 gap-x-6 my-6">
+                         {storeItems}
                   </div>
               </div>
           </div>
