@@ -3,7 +3,8 @@ import { StoreImage } from '../StoreImages'
 
 export const StoreContents = () => {
   return (
-    <div className=" w-full py-20 bg-slate-200 dark:bg-slate-900">
+      <div className=" flex flex-col">
+            <div className=" w-full py-20 bg-slate-200 dark:bg-slate-900">
           <div className=" flex flex-col  mx-auto max-w-5xl">
               <div className=" flex w-full border-b dark:border-slate-700 my-6 py-4">
                    <h3 className=' text-2xl font-raleway'>The Chemcider Store</h3>
@@ -22,6 +23,11 @@ export const StoreContents = () => {
               </div>
           </div>
     </div>
-    </div>
+          </div>
+          
+          <div className="">
+              Even more contents 
+          </div>
+  </div>
   )
 }
