@@ -11,7 +11,7 @@ const Community = ( { openModal }: any) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className=" px-4 md:my-10 py-10 space-y-6 lg:space-y-8 flex flex-col justify-center ">
                     <h2 className='lg:text-2xl py-2 text-start text-xl font-bold text-[rgb(34,177,197)] font-logo'>Join our community for free</h2>
-                        <p className=''>
+                        <p className=' text-justify'>
                             Join our vibrant community of scientists, engineers, and technicians.
                             Connect with like-minded professionals, share ideas, and work on innovative projects.
                             Experience seamless communications and connect with a global community of professionals
@@ -19,7 +19,7 @@ const Community = ( { openModal }: any) => {
                     </p>
 
                     <div className=" grid grid-cols-1 gap-y-4 md:gap-0 sm:gap-x-4 md:gap-x-6 ">
-                        <Link href={""} className=' py-4 px-6 bg-[rgb(34,176,196)] dark:hover:bg-[rgb(34,176,196)] text-white font-semibold dark:bg-purple-50/30 rounded-md: flex space-x-3 items-center'>
+                        <Link href={""} className=' py-2 px-6 bg-[rgb(34,176,196)] dark:hover:bg-[rgb(34,176,196)] text-white font-semibold dark:bg-purple-50/30 rounded-md: flex space-x-3 items-center'>
                        <BsDiscord className="h-8 w-8 fill-white flex-none" />
                         <p>Join Our Discord Server</p>
                     </Link>

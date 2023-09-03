@@ -1,5 +1,6 @@
 import { StoreBanner } from '@/components/store/StoreBanner'
 import { StoreContact } from '@/components/store/StoreContact'
+import { StoreContents } from '@/components/store/StoreContents'
 import React from 'react'
 
 const Store = () => {
@@ -7,6 +8,7 @@ const Store = () => {
     <div className="">
       <StoreBanner />
       <StoreContact />
+      <StoreContents />
    </div>
   )
 }

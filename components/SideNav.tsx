@@ -19,7 +19,7 @@ export const SideNav = () => {
                 <ul className=" w-full flex space-y-6 flex-col">
                     <div className=" w-full px-4">
                         <div className=" flex flex-col space-y-3">
-                            <Link onClick={closeModal} href={'/jobs'} className=' items-center space-x-4 text-slate-950 flex  py-3 flex-row rounded-lg'>
+                            <Link onClick={closeModal} href={'/'} className=' items-center space-x-4 text-slate-950 flex  py-3 flex-row rounded-lg'>
                                 <p className=' dark:text-slate-400 text-xl'>Home</p>
                             </Link>
 

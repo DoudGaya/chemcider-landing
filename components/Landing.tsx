@@ -41,13 +41,13 @@ export const Landing = () => {
                 <div className="space-y-6 flex justify-center w-full flex-col px-4 lg:px-0">
                     <div className="xl:text-7xl text-2xl dark:text-white font-semibold font-logo">Welcome to <Link href={'/'} className=' text-[rgb(34,177,197)]'>Chemcider Inc. </Link></div>
                     <div className="xl:text-2xl font-raleway dark:text-white text-xl">Free <span className=' hover:underline cursor-pointer underline-offset-2 text-[rgb(34,177,197)]'>open-source</span> learning resource for scientists and technicians</div>
-                    <div className="flex flex-col xl:flex-row xl:space-x-6 justify-center pt-10 px-10 lg:px-0 xl:space-y-0 space-y-8">
-                    <div className="grid lg:grid-cols-3 gap-y-6 lg:gap-x-10">
+                    <div className="flex flex-col xl:flex-row xl:space-x-6 justify-center pt-10 lg:px-0 xl:space-y-0 space-y-8">
+                    <div className="grid lg:grid-cols-3 px-8 gap-y-6 lg:gap-x-10">
                     {
                         links.map((lnk) => {
                             return (
                             <Link key={lnk.id} href={lnk.url}>
-                                <div className='border-dashed flex items-center space-x-4 hover:bg-primary/10 border border-primary py-8 px-16 rounded-xl '>
+                                <div className='border-dashed flex items-center justify-center lg:space-x-4 hover:bg-primary/10 border border-primary py-8 px-16 rounded-xl '>
                                     {lnk.icon} 
                                     <p className='text-lg'>{lnk.name}</p>
                                 </div>

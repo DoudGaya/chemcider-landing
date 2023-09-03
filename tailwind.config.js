@@ -19,7 +19,8 @@ module.exports = {
     fontFamily: {
       'logo': ['Montserrat', 'sans-serif'],
       'raleway': ['Raleway', 'sans-serif'],
-      'sans': ['Open Sans', 'sans-serif']
+      'sans': ['Open Sans', 'sans-serif'],
+      'poppin': [ 'Poppins', 'sans-serif']
     },
   },
   plugins: [],
