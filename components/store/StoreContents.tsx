@@ -1,7 +1,18 @@
 import React from 'react'
 import { StoreImage } from '../StoreImages'
+import Image from 'next/image'
+import { storeContents } from '@/lib/data'
 
 
+
+
+const WhyChooseUs = () => {
+    return (
+        <div className="">
+            Hello
+        </div>
+    )
+}
 
 
 
@@ -35,7 +46,9 @@ export const StoreContents = () => {
                       <h3 className=' font-raleway text-center text-2xl '>Explore Our Extensive Range of Products</h3>
                   </div>
                   <div className=" grid grid-cols-3">
-                      
+                      <div className=" flex flex-col">
+                         <WhyChooseUs />
+                      </div>
                   </div>
               </div>
           </div>
