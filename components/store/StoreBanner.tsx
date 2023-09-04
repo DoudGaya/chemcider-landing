@@ -14,7 +14,7 @@ export const StoreBanner = () => {
           </p>
         </div>
         <div className=" flex justify-end  max-w-max">
-            <Image src={storeBanner} className=' object-end object-contained h-[300px] ' alt='Chemcider Store' />
+            <Image priority={true} src={storeBanner} className=' object-end object-contained h-[300px] ' alt='Chemcider Store' />
         </div>
       </div>
     </div>

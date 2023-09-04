@@ -40,7 +40,7 @@ export const StoreContents = () => {
                 <div className=" flex w-full justify-center ">
                     <h3 className=' font-raleway text-center text-2xl '>Explore Our Extensive Range of Products</h3>
                 </div>
-                <div className=" grid grid-cols-3 gap-x-6 my-6">
+                <div className=" grid px-10 gap-y-6 lg:grid-cols-3 grid-cols-1 gap-x-6 my-6">
                         {storeItems}
                 </div>
             </div>

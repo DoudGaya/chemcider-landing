@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Script strategy="afterInteractive" >
+      {/* <Script strategy="afterInteractive" >
         {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
         </Script>
 
-        <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-73SHRQY3GQ"></Script>
+        <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-73SHRQY3GQ"></Script> */}
       <Script>
             {
               `
