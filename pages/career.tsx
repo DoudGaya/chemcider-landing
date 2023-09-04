@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const career = () => {
+ const career = () => {
   return (
     <div>The Career Page </div>
   )
 }
+
+export default career
