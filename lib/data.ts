@@ -72,7 +72,7 @@ export const storeContents: StoreContent[] = [
         id: 1,
         svg: chemical,
         title: 'Chemical Solutions',
-        message: 'We offer a wide array of laboratory chemicals, reagents, and solutions. Whether for research, analysis, or industrial applications, trust us for quality and reliability'
+        message: 'We offer a wide array of laboratory chemicals, reagents, and solutions for research, analysis, or industrial applications, trust us for quality and reliability'
     }
 ]
 

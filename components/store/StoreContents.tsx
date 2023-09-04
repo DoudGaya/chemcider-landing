@@ -1,35 +1,12 @@
 import React from 'react'
 import { StoreImage } from '../StoreImages'
-import Image, { StaticImageData } from 'next/image'
 import { storeContents } from '@/lib/data'
+import { WhatWeOffer } from './WhatWeOffer'
 
 
-interface StoreContent {
-    id: number;
-    svg: StaticImageData;
-    title: string;
-    message: string
-}
-
-
-const WhyChooseUs = ({ single }: {single: StoreContent}) => {
-    console.log(single)
-    return (
-        <div className=" flex flex-col justify-center  text-center items-center">
-            <span className=' p-4 border-2 border-primary rounded-full my-2'>
-                <Image src={single.svg} alt={single.title} className=' h-10 w-10' />
-            </span>
-            <h3 className=' font-poppin'>{single.title}</h3>
-            <p className=' my-6 font-light font-raleway '>
-                {single.message}
-            </p>
-            
-        </div>
-    )
-}
 
 const storeItems = storeContents.map((single) => {
-    return <WhyChooseUs single={single} />
+    return <WhatWeOffer single={single} />
 })
 
 
@@ -44,7 +21,7 @@ export const StoreContents = () => {
            </div>
               <div className="  grid grid-cols-1 lg:grid-cols-2 gap-x-6">
               <div className=" h-full my-auto flex flex-col justify-center">
-                <p className=' font-poppin text-lg  text-justify'>
+                <p className=' font-poppin text-lg lg:text-base  text-justify'>
                   At Chemcider Store, we are your one-stop destination for high quality laboratory equipment,
                   essential medical supplies, and top-notch chemicals in Nigeria. With a commitment to excellence
                   and a passion for serving healthcare professionals, researchers, and institutions, we provide a
@@ -58,16 +35,19 @@ export const StoreContents = () => {
     </div>
           </div>
           
-          <div className=" w-full py-20">
-              <div className=" mx-auto max-w-5xl flex flex-col w-full">
-                  <div className=" flex w-full justify-center ">
-                      <h3 className=' font-raleway text-center text-2xl '>Explore Our Extensive Range of Products</h3>
-                  </div>
-                  <div className=" grid grid-cols-3 gap-x-6 my-6">
-                         {storeItems}
-                  </div>
-              </div>
+        <div className=" w-full py-20">
+            <div className=" mx-auto max-w-5xl flex flex-col w-full">
+                <div className=" flex w-full justify-center ">
+                    <h3 className=' font-raleway text-center text-2xl '>Explore Our Extensive Range of Products</h3>
+                </div>
+                <div className=" grid grid-cols-3 gap-x-6 my-6">
+                        {storeItems}
+                </div>
+            </div>
           </div>
+          <div className=" bg-slate-200 dark:bg-slate-800">
+              More
+        </div>
   </div>
   )
 }
