@@ -49,7 +49,7 @@ export const StoreContact = () => {
                           <div className=" grid grid-cols-3 max-w-max gap-x-3 lg:items-start w-auto ">
                           {
                               ceoSocials.map((s) => {
-                                  return <Link href={s.link} className=" p-1 hover:bg-primary/30 rounded-lg">
+                                  return <Link key={s.name} href={s.link} className=" p-1 hover:bg-primary/30 rounded-lg">
                                       {s.icon}
                                   </Link>
                               })

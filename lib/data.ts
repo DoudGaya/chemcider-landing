@@ -63,13 +63,13 @@ export const storeContents: StoreContent[] = [
         message: 'Equip your lab with the latest instruments and apparatus. From microscopes to centrifuges, we have everything to enhance your research capabilities'
     },
     {
-        id: 1,
+        id: 2,
         svg: medic,
         title: 'Medical Supplies',
         message: 'Our collection of medical products ensures the well-being of patients and the efficiency of healthcare facilities. Find surgical instruments, diagnostic tools, and more'
     },
     {
-        id: 1,
+        id: 3,
         svg: chemical,
         title: 'Chemical Solutions',
         message: 'We offer a wide array of laboratory chemicals, reagents, and solutions for research, analysis, or industrial applications, trust us for quality and reliability'

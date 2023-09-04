@@ -6,7 +6,7 @@ import { WhatWeOffer } from './WhatWeOffer'
 
 
 const storeItems = storeContents.map((single) => {
-    return <WhatWeOffer single={single} />
+    return <WhatWeOffer key={single.id} single={single} />
 })
 
 
