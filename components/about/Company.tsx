@@ -31,7 +31,7 @@ export const Company = () => {
        </div>
       </div>
       <div className="">
-        <Image src={tech} className=' lg:h-full h-[200px] object-cover object-center' alt='Interlude Break' />
+        <Image src={tech} priority={true} className=' lg:h-full h-[200px] object-cover object-center' alt='Interlude Break' />
       </div>
       </div>
      </div>

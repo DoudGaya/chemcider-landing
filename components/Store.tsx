@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { StoreImage } from './StoreImages'
 
-const Store = ({ openModal }: any) => {
+const Store = () => {
     return (
         <>
         <section className=' my-10  '>

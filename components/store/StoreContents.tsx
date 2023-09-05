@@ -1,7 +1,8 @@
 import React from 'react'
 import { StoreImage } from '../StoreImages'
 import { storeContents } from '@/lib/data'
-import { WhatWeOffer } from './WhatWeOffer'
+import { WhatWeOffer } from './store_contents/WhatWeOffer'
+import { WhyChooseUs } from './store_contents/WhyChooseUs'
 
 
 
@@ -40,14 +41,12 @@ export const StoreContents = () => {
                 <div className=" flex w-full justify-center ">
                     <h3 className=' font-raleway text-center text-2xl '>Explore Our Extensive Range of Products</h3>
                 </div>
-                <div className=" grid px-10 gap-y-6 lg:grid-cols-3 grid-cols-1 gap-x-6 my-6">
+                <div className=" grid px-10 lg:px-0 gap-y-6 lg:grid-cols-3 grid-cols-1 gap-x-6 my-6">
                         {storeItems}
                 </div>
             </div>
           </div>
-          <div className=" bg-slate-200 dark:bg-slate-800">
-              More
-        </div>
+        <WhyChooseUs />
   </div>
   )
 }

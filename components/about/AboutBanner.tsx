@@ -54,7 +54,7 @@ export const AboutBanner = () => {
                 <div className="  mx-auto max-w-4xl text-white font-raleway px-4 py-6 rounded-lg">
                     <div className=" flex flex-col lg:flex-row space-y-6 md:space-y-0 text-center md:text-start space-x-5 my-auto h-full items-center">
                     <div className=" h-[150px] flex-none shadow-lg w-[150px] flex overflow-hidden rounded-lg">
-                        <Image alt='chemcider' src={logo} className=' w-full object-cover object-center' />
+                        <Image alt='chemcider' priority={true} src={logo} className=' w-full object-cover object-center' />
                     </div>
                         <div className=" flex flex-col space-y-4">
                             <p className='font-raleway text-xl'>Knowledge is free and should be accessible to everyone. Learn from different topics and different authors </p>

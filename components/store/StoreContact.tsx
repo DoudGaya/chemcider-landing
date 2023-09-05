@@ -39,7 +39,7 @@ export const StoreContact = () => {
           <div className=" flex flex-row justify-between ">
                 <div className=" border-b py-6 border-primary flex flex-col justify-center text-center lg:text-start space-y-6 px-6 lg:flex-row my-6 max-w-3xl w-full mx-auto items-center space-x-6">
                   <div className=" h-[200px] w-[200px] rounded-full border-primary border-4 shadow-inner overflow-hidden ">
-                      <Image src={habib} alt='Abdulrahman Dauda Gaya' className=' overflow-hidden h-full w-full rounded-lg object-cover ' />
+                      <Image priority={true} src={habib} alt='Abdulrahman Dauda Gaya' className=' overflow-hidden h-full w-full rounded-lg object-cover ' />
                   </div>
                   <div className=" flex flex-col space-y-1">
                       <p className=' font-thin font-raleway'>Senior Sales Manager at Chemcider Inc</p>

@@ -9,7 +9,7 @@ import ai3 from '../public/ai3.jpg'
 
 
 
-const GenAI = ({ openModal }: any) => {
+const GenAI = () => {
     return (
         <>
            <div className=" grid grid-cols-1 xl:grid-cols-3">

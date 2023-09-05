@@ -1,3 +1,4 @@
+import Link from 'next/link'
 
 
 interface FooterLinks {
@@ -15,18 +16,18 @@ const footerLinks: FooterLinks[] = [
 
     {
         id: 2,
-        link: '#',
-        name: 'Jobs Portal'
+        link: 'https://discord.gg/RhGuDGSD',
+        name: 'Community'
     },
 
     {
         id: 3,
-        link: '#',
-        name: 'Community'
+        link: '/learning',
+        name: 'Learning'
     },
     {
         id: 4,
-        link: '#',
+        link: '/store',
         name: 'Chemcider Store'
     },
 ]
@@ -55,19 +56,19 @@ const Footer = ( {openModal}: any ) => {
             <div className=" dark:text-slate-200 flex flex-col md:border-r px-6">
                 <ul className=" flex flex-col space-y-2 my-2">
                     <li className=" w-full">
-                        <button onClick={openModal} className=" hover:underline">Home</button>
+                        <Link href={'/home'} className=" hover:underline">Home</Link>
                     </li>
 
                     <li className=" w-full">
-                        <button onClick={openModal} className=" hover:underline">About Us</button>
+                        <Link href={'/about'} className=" hover:underline">About Us</Link>
                     </li>
                     
                     <li className=" w-full">
-                        <button onClick={openModal} className=" hover:underline">Career</button>
+                        <Link href={'/career'} className=" hover:underline">Career</Link>
                     </li>
                     
                     <li className=" w-full">
-                        <button onClick={openModal} className=" hover:underline">Store</button>
+                        <Link href={'/store'} className=" hover:underline">Store</Link>
                     </li>
 
                 </ul>

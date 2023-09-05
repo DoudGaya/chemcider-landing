@@ -41,7 +41,7 @@ function Main(): JSX.Element {
               {/* the community */}
       <section className=' bg-white dark:bg-black'>
         <div className=" md:w-full lg:w-[1200px] mx-auto">
-            <Community openModal={openModal} />
+            <Community />
           </div>
       </section>
               {/* end of community */}
@@ -55,14 +55,14 @@ function Main(): JSX.Element {
               {/* PARTNERS */}
      <section className=' border-y border-gray-700/40 dark:bg-slate-900' id='#genai'>
           <div className=' md:w-full lg:w-[1200px] mx-auto'>
-           <GenAI openModal={openModal} />
+           <GenAI />
           </div>
       </section>
               {/* END OF PARTNERS */}
               {/* THE STORE */}
       <section className=' w-full border-y border-gray-700/60 dark:bg-black py-10'>
         <div className=" md:w-full lg:w-[1200px] mx-auto ">
-            <Store openModal={openModal} />
+            <Store  />
           </div>
       </section>
               {/* END OF STORE */}

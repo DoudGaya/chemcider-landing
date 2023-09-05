@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import {BsDiscord} from 'react-icons/bs'
 
-const Community = ( { openModal }: any) => {
+const Community = () => {
     return (
         <>
         <section className=" flex flex-col px-6 md:px-0 mb-10 ">
