@@ -20,16 +20,16 @@ export const StoreProducts = () => {
                       <div className=" grid gap-x-4  w-full grid-cols-1 lg:grid-cols-2">
                         <label htmlFor="" className=' flex flex-col space-y-2'>
                             <p>Email Address</p>
-                          <input type="text" className=' w-full py-2 bg-slate-700/40 px-4 outline-none rounded-lg border ' />
+                          <input type="text" placeholder='mail@example.com' className=' w-full py-2 bg-slate-700/40 px-4 outline-none rounded-lg border ' />
                           </label>
                           <label htmlFor="" className=' flex flex-col space-y-2'>
                             <p>Phone Number</p>
-                          <input type="text" className=' w-full py-2 bg-slate-700/40 px-4 outline-none rounded-lg border ' />
+                          <input type="text" placeholder='+234 (000) 000 000' className=' w-full py-2 bg-slate-700/40 px-4 outline-none rounded-lg border ' />
                       </label>
                       </div>
                       <label htmlFor="" className=' flex flex-col space-y-4'>
                           <p>Message</p>
-                          <textarea name="" id="" className=' py-2 px-3 h-[100px] w-full bg-slate-700/40 border rounded-lg'>
+                          <textarea placeholder='Message chemcider Store' name="" id="" className=' py-2 px-3 h-[100px] w-full bg-slate-700/40 border rounded-lg'>
                               
                           </textarea>
                       </label>
