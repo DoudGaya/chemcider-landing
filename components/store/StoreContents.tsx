@@ -1,8 +1,10 @@
 import React from 'react'
+import Link from 'next/link'
 import { StoreImage } from '../StoreImages'
 import { storeContents } from '@/lib/data'
 import { WhatWeOffer } from './store_contents/WhatWeOffer'
 import { WhyChooseUs } from './store_contents/WhyChooseUs'
+import { StoreProducts } from './store_contents/StoreProducts'
 
 
 
@@ -17,8 +19,8 @@ export const StoreContents = () => {
       <div className=" flex flex-col ">
             <div className=" w-full px-8 py-20 bg-slate-200 dark:bg-slate-900">
           <div className=" flex flex-col  mx-auto max-w-5xl space-y-8">
-              <div className=" flex w-full justify-center border-b dark:border-slate-700 ">
-                   <h3 className=' text-2xl font-raleway'>The Chemcider Store</h3>
+              <div className=" flex w-full justify-center dark:border-slate-700 ">
+                   <h3 className=' text-2xl font-raleway'>About the Store</h3>
            </div>
               <div className="  grid grid-cols-1 lg:grid-cols-2 gap-x-6">
               <div className=" h-full my-auto flex flex-col justify-center">
@@ -28,6 +30,7 @@ export const StoreContents = () => {
                   and a passion for serving healthcare professionals, researchers, and institutions, we provide a
                   comprehensive range of products to meet your diverse needs.
               </p>
+              
               </div>
               <div className="">
                   <StoreImage />
@@ -46,7 +49,8 @@ export const StoreContents = () => {
                 </div>
             </div>
           </div>
-        <WhyChooseUs />
+      <WhyChooseUs />
+      <StoreProducts />
   </div>
   )
 }
