@@ -68,13 +68,9 @@ function Main(): JSX.Element {
               {/* END OF STORE */}
 
               {/* PARTNERS */}
-        <section className='bg-slate-200 w-full dark:bg-black py-10'>
-          <div className=' md:w-full lg:w-[1200px] mx-auto'>
-            <Footer />
-          </div>
-        </section>
       </div>
-    </div>
+      </div>
+      
     </>
   )
 }

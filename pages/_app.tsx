@@ -9,6 +9,7 @@ import { SideNav } from '@/components/SideNav'
 import ClickAwayListener from 'react-click-away-listener'
 import { NavContext } from '@/components/context/NavContext'
 import { useContext } from 'react'
+import Footer from '@/parts/Footer'
 
 
 export default function App({ Component, pageProps }: AppProps) { 
@@ -52,7 +53,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <NavProvider>
               <SideNav />
             <MobileNav />
-            <Component {...pageProps} />
+          <Component {...pageProps} />
+          <Footer />
         </NavProvider>
         </div>
       <Analytics />

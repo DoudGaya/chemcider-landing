@@ -44,6 +44,8 @@ const urls = footerLinks.map( (items )  => <ProductsLinks key={items.id} items={
 
 const Footer = ( {openModal}: any ) => {
     return (
+    <section className='bg-slate-200 w-full dark:bg-black py-10'>
+        <div className=' md:w-full lg:w-[1200px] mx-auto'></div>
         <div className=" grid gap-y-6 md:gap-y-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             <div className=" px-6 md:px-0 dark:text-slate-200 flex flex-col md:border-r pr-6">
                 <h3 className=" text-lg font-semibold">About Us</h3>
@@ -83,7 +85,10 @@ const Footer = ( {openModal}: any ) => {
                     <button className=" bg-[rgb(72,149,144)] w-full py-2 ">Send Us a Message</button>
                 </form> */}
             </div>
-        </div>
+        </div> 
+    </section>
+            
+
     )
 }
 

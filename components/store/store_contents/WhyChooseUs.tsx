@@ -36,7 +36,7 @@ export const WhyChooseUs = () => {
           </div>
           <div className=" grid  gap-x-8 ">
                   <div className="">
-                      <ul className=' grid grid-cols-2 gap-10'>
+                      <ul className=' grid grid-cols-1 lg:grid-cols-2 px-10 lg:px-0 gap-10'>
                           {
                               whyChooseUs.map((items) => {
                                   return (
