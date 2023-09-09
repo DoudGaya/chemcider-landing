@@ -1,12 +1,11 @@
 import { AiBanner } from "./LearningBanner"
-import { AiMain } from "./AiMain"
+import  LearningContents from "./LearningContents"
 
-export const AiHome = () => {
+export const LearningHome = () => {
     return (
         <>
         <div className="">
-            <AiBanner />
-            <AiMain />
+           
         </div>
         </>
     )

@@ -7,6 +7,7 @@ import product6 from '../public/products/product6.png'
 import { StaticImageData } from 'next/image'
 
 
+
 interface StoreContent {
     id: number;
     svg: StaticImageData;
@@ -76,3 +77,12 @@ export const storeContents: StoreContent[] = [
     }
 ]
 
+
+
+const post = [
+    {
+        id: 1,
+        title: 'We offer a wide array of laboratory chemicals, reagents, and solutions',
+        desctiption: 'lo'
+    }
+]

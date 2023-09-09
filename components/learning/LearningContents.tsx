@@ -1,4 +1,9 @@
-export const AiMain = () => {
+import { client } from "@/sanity/lib/client"
+import { groq } from "next-sanity"
+
+
+export default function LearningContents( {learningData}: any) {
+    console.log(learningData)
     return (
         <>
         <div className=" w-full">
@@ -13,4 +18,17 @@ export const AiMain = () => {
         </div>
         </>
     )
+}
+
+
+
+
+export const getStaticProps = async () => {
+    const articlesQuery = groq`*[_type=="author"]`
+    const learningData = await client.fetch(articlesQuery)
+        return {
+            props: {
+            learningData
+        },
+    }
 }
